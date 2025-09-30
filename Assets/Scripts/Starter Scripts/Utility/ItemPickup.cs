@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
@@ -12,6 +13,7 @@ public class ItemPickup : MonoBehaviour
     public Sprite displaySprite;
     public Color spriteDye = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     public GameObject fToPickUp;
+    public AudioSource pickUpSFX;
 
     private void OnTriggerStay(Collider collision)
     {
@@ -21,14 +23,15 @@ public class ItemPickup : MonoBehaviour
             inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
 
             this.gameObject.SetActive(false);
-        }
-        if (this.gameObject.activeSelf)
-        {
-            fToPickUp.SetActive(true);
-        }
-        else
-        {
-            fToPickUp.SetActive(false);
+            pickUpSFX.Play();
+            if (this.gameObject.activeSelf)
+            {
+                fToPickUp.SetActive(true);
+            }
+            else
+            {
+                fToPickUp.SetActive(false);
+            }
         }
     }
 
