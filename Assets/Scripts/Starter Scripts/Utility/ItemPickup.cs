@@ -10,19 +10,42 @@ public class ItemPickup : MonoBehaviour
     public int itemID = 0;
     public bool destroyOnUse = false;
     public Sprite displaySprite;
-    public Color spriteDye = new Color(1.0f,1.0f,1.0f, 1.0f);
+    public Color spriteDye = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+    public GameObject fToPickUp;
+
+    private void OnTriggerStay(Collider collision)
+    {
+        if (collision.tag == "Player" && Input.GetKeyDown(KeyCode.F))
+        {
+            collision.TryGetComponent<PlayerInventory>(out PlayerInventory inv);
+            inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
+
+            this.gameObject.SetActive(false);
+        }
+        if (this.gameObject.activeSelf)
+        {
+            fToPickUp.SetActive(true);
+        }
+        else
+        {
+            fToPickUp.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player")
+        if (this.gameObject.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                collision.TryGetComponent<PlayerInventory>(out PlayerInventory inv);
-                inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
-
-                this.gameObject.SetActive(false);
-            }
+            fToPickUp.SetActive(true);
         }
+        else
+        {
+            fToPickUp.SetActive(false);
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        fToPickUp.SetActive(false);
     }
 }
