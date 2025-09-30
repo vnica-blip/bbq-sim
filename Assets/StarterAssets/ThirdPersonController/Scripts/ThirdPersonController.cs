@@ -1,4 +1,5 @@
-﻿ using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -75,8 +76,8 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
-        public string PickupAnimationTrigger = "PickUp";
-        [SerializeField] public ItemPickup canPickup;
+        [HideInInspector] public string PickupAnimationTrigger = "PickUp";
+        public ItemPickup canPickup;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -360,7 +361,14 @@ namespace StarterAssets
             {
                 if (_hasAnimator)
                 {
-                    _animator.SetTrigger(_animIDPickUp);
+                    _animator.SetBool(_animIDPickUp, true);
+                }
+            }
+            else
+            {
+                if (_hasAnimator)
+                {
+                    _animator.SetBool(_animIDPickUp, false);
                 }
             }
         }

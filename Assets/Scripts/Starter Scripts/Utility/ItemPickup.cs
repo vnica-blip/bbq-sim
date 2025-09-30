@@ -35,6 +35,14 @@ public class ItemPickup : MonoBehaviour
                 fToPickUp.SetActive(false);
             }
         }
+        StartCoroutine(PickUpAnimWait());
+    }
+
+    private IEnumerator PickUpAnimWait()
+    {
+        yield return new WaitForSeconds(2);
+        isPickingUpItem = false;
+        yield return null;
     }
 
     private void OnTriggerEnter(Collider collision)
