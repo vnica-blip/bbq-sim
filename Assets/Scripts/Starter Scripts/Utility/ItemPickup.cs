@@ -16,10 +16,13 @@ public class ItemPickup : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.TryGetComponent<PlayerInventory>(out PlayerInventory inv);
-            inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                collision.TryGetComponent<PlayerInventory>(out PlayerInventory inv);
+                inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
 
-            this.gameObject.SetActive(false);
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }
