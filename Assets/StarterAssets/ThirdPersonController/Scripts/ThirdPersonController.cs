@@ -1,4 +1,5 @@
-﻿ using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -75,6 +76,9 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
+        [HideInInspector] public string PickupAnimationTrigger = "PickUp";
+        public ItemPickup canPickup;
+
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
@@ -97,6 +101,7 @@ namespace StarterAssets
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
+        private int _animIDPickUp;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -159,6 +164,7 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            PickUp();
         }
 
         private void LateUpdate()
@@ -173,6 +179,7 @@ namespace StarterAssets
             _animIDJump = Animator.StringToHash("Jump");
             _animIDFreeFall = Animator.StringToHash("FreeFall");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+            _animIDPickUp = Animator.StringToHash("PickUp");
         }
 
         private void GroundedCheck()
@@ -345,6 +352,24 @@ namespace StarterAssets
             if (_verticalVelocity < _terminalVelocity)
             {
                 _verticalVelocity += Gravity * Time.deltaTime;
+            }
+        }
+
+        private void PickUp()
+        {
+            if (canPickup.isPickingUpItem)
+            {
+                if (_hasAnimator)
+                {
+                    _animator.SetBool(_animIDPickUp, true);
+                }
+            }
+            else
+            {
+                if (_hasAnimator)
+                {
+                    _animator.SetBool(_animIDPickUp, false);
+                }
             }
         }
 
