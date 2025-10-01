@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
@@ -10,16 +11,54 @@ public class ItemPickup : MonoBehaviour
     public int itemID = 0;
     public bool destroyOnUse = false;
     public Sprite displaySprite;
-    public Color spriteDye = new Color(1.0f,1.0f,1.0f, 1.0f);
+    public Color spriteDye = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+    public GameObject fToPickUp;
+    public AudioSource pickUpSFX;
+    public bool isPickingUpItem;
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerStay(Collider collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && Input.GetKeyDown(KeyCode.F))
         {
             collision.TryGetComponent<PlayerInventory>(out PlayerInventory inv);
             inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
 
+            isPickingUpItem = true;
             this.gameObject.SetActive(false);
+            pickUpSFX.Play();
+            if (this.gameObject.activeSelf)
+            {
+                fToPickUp.SetActive(true);
+            }
+            else
+            {
+                fToPickUp.SetActive(false);
+            }
         }
+        StartCoroutine(PickUpAnimWait());
+    }
+
+    private IEnumerator PickUpAnimWait()
+    {
+        yield return new WaitForSeconds(2);
+        isPickingUpItem = false;
+        yield return null;
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (this.gameObject.activeSelf)
+        {
+            fToPickUp.SetActive(true);
+        }
+        else
+        {
+            fToPickUp.SetActive(false);
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        fToPickUp.SetActive(false);
     }
 }
