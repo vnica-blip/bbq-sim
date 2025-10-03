@@ -9253,7 +9253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321623581}
   - component: {fileID: 1321623582}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9314,7 +9314,7 @@ MonoBehaviour:
   - {fileID: 0}
   shadowMode: 1
   renderLayer:
-    m_LayerIndex: 3
+    m_LayerIndex: 0
   pointCount: 12000
   multiplyByArea: 0
   pointLODFactor: 1
@@ -10272,7 +10272,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 3
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 117cb0ed26addd5479708ae2583484cf, type: 2}
