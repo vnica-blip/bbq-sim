@@ -8,6 +8,8 @@ public class PlayerInventory : MonoBehaviour
     //Attach to the player to give them an inventory. Stores Item type pickups
 
     public List<Item> inventory;
+    public AudioSource winSFX;
+    public GameObject winVFX;
 
     [System.Serializable]
     public class Item //Custom class where we hold all the data we need for the item
@@ -41,6 +43,14 @@ public class PlayerInventory : MonoBehaviour
     {
         inventory = new List<Item>();
         inventoryImageList = new List<Image>();
+    }
+
+    void Update()
+    {
+        if (inventory.Count == 4)
+        {
+            AllItemsCollected();
+        }
     }
 
     public void AddItemToInventory(Item newItem)
@@ -116,5 +126,11 @@ public class PlayerInventory : MonoBehaviour
             AddItemToUI(item);
         }
 
+    }
+
+    void AllItemsCollected()
+    {
+        winSFX.Play();
+        winVFX.SetActive (true);
     }
 }
