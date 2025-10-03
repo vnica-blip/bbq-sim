@@ -8,6 +8,8 @@ public class PlayerInventory : MonoBehaviour
     //Attach to the player to give them an inventory. Stores Item type pickups
 
     public List<Item> inventory;
+    public GameObject winVFX;
+    public Collider winTrigger;
 
     [System.Serializable]
     public class Item //Custom class where we hold all the data we need for the item
@@ -30,7 +32,10 @@ public class PlayerInventory : MonoBehaviour
     [Header("UI")]
     public bool useUI = false;
     public Image invisImagePrefab;
-    public GameObject inventoryImageEmpty;
+    public GameObject inventoryImageEmpty1;
+    public GameObject inventoryImageEmpty2;
+    public GameObject inventoryImageEmpty3;
+    public GameObject inventoryImageEmpty4;
     List<Image> inventoryImageList;
     public float padding = 0f;
 
@@ -38,11 +43,24 @@ public class PlayerInventory : MonoBehaviour
     {
         inventory = new List<Item>();
         inventoryImageList = new List<Image>();
+
+        Debug.Log("Inventory initialized.");
+    }
+
+    void Update()
+    {
+        if (inventory.Count >= 4)
+        {
+            AllItemsCollected();
+        }
+
+        Debug.Log("Inventory Count in Update: " + inventory.Count);
     }
 
     public void AddItemToInventory(Item newItem)
     {
         inventory.Add(newItem);
+        Debug.Log("Item added. New inventory count: " + inventory.Count);
         if (useUI)
         {
             AddItemToUI(newItem);
@@ -62,15 +80,38 @@ public class PlayerInventory : MonoBehaviour
 
     void AddItemToUI(Item newItem) //Helper Function
     {
-        Image newImage = Instantiate(invisImagePrefab, inventoryImageEmpty.transform);
-        newImage.transform.SetParent(inventoryImageEmpty.transform, false);
+        if (newItem.itemID == 1)
+        {
+            Image newImage = Instantiate(invisImagePrefab, inventoryImageEmpty1.transform);
+            newImage.sprite = newItem.sprite;
+            newImage.color = newItem.color;
+        }
+        if (newItem.itemID == 2)
+        {
+            Image newImage = Instantiate(invisImagePrefab, inventoryImageEmpty2.transform);
+            newImage.sprite = newItem.sprite;
+            newImage.color = newItem.color;
+        }
+        if (newItem.itemID == 3)
+        {
+            Image newImage = Instantiate(invisImagePrefab, inventoryImageEmpty3.transform);
+            newImage.sprite = newItem.sprite;
+            newImage.color = newItem.color;
+        }
+        if (newItem.itemID == 4)
+        {
+            Image newImage = Instantiate(invisImagePrefab, inventoryImageEmpty4.transform);
+            newImage.sprite = newItem.sprite;
+            newImage.color = newItem.color;
+        }
+        /*newImage.transform.SetParent(inventoryImageEmpty.transform, false);
         Vector3 newPosition = new Vector3(newImage.GetComponent<RectTransform>().rect.width * inventoryImageList.Count + (padding * inventoryImageList.Count),
             newImage.GetComponent<RectTransform>().localPosition.y, newImage.GetComponent<RectTransform>().localPosition.z);
 
         newImage.GetComponent<RectTransform>().localPosition = newPosition;
         newImage.sprite = newItem.sprite;
         newImage.color = newItem.color;
-        inventoryImageList.Add(newImage);
+        inventoryImageList.Add(newImage);*/
     }
 
     void removeItemFromUI() //Helper Function
@@ -78,7 +119,7 @@ public class PlayerInventory : MonoBehaviour
         inventoryImageList.Clear(); //Clear list first
 
         //Destroy all UI Elements
-        var i = inventoryImageEmpty.GetComponentsInChildren<Image>();
+        var i = inventoryImageEmpty1.GetComponentsInChildren<Image>();
         foreach (Image t in i)
         {
             Destroy(t);
@@ -90,5 +131,11 @@ public class PlayerInventory : MonoBehaviour
             AddItemToUI(item);
         }
 
+    }
+
+    void AllItemsCollected()
+    {
+        winVFX.SetActive (true);
+        winTrigger.enabled = true;
     }
 }
