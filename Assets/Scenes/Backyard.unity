@@ -2152,7 +2152,6 @@ MonoBehaviour:
   spriteDye: {r: 1, g: 1, b: 1, a: 1}
   fToPickUp: {fileID: 4223261}
   pickUpSFX: {fileID: 3469287837595252785}
-  isPickingUpItem: 0
 --- !u!65 &637491145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5712,6 +5711,7 @@ MonoBehaviour:
   inventoryImageEmpty3: {fileID: 1395851345}
   inventoryImageEmpty4: {fileID: 1425444074}
   padding: 0
+  playerController: {fileID: 4416926083450906659}
 --- !u!1 &1740087262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6533758491483909306, guid: acbdbfa84226c624388710f2feca1b66,
@@ -24072,7 +24072,6 @@ MonoBehaviour:
   spriteDye: {r: 1, g: 1, b: 1, a: 1}
   fToPickUp: {fileID: 8494456146202587399}
   pickUpSFX: {fileID: 6982812147834300649}
-  isPickingUpItem: 0
 --- !u!33 &3469287837114235738
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24265,7 +24264,6 @@ MonoBehaviour:
   spriteDye: {r: 1, g: 1, b: 1, a: 1}
   fToPickUp: {fileID: 2264763433774929678}
   pickUpSFX: {fileID: 3469287838234660361}
-  isPickingUpItem: 0
 --- !u!65 &3469287838191976005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25181,7 +25179,8 @@ MonoBehaviour:
   CameraAngleOverride: 0
   LockCameraPosition: 0
   PickupAnimationTrigger: PickUp
-  canPickup: {fileID: 637491144}
+  pickingUp: 0
+  pickupAnimLength: 2
 --- !u!114 &4416926083450906660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26570,7 +26569,6 @@ MonoBehaviour:
   spriteDye: {r: 1, g: 1, b: 1, a: 1}
   fToPickUp: {fileID: 7278211488653657}
   pickUpSFX: {fileID: 6982812147834300649}
-  isPickingUpItem: 0
 --- !u!65 &6907347008834650769
 BoxCollider:
   m_ObjectHideFlags: 0

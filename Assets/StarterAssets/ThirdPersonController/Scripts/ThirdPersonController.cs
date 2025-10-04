@@ -77,7 +77,8 @@ namespace StarterAssets
         public bool LockCameraPosition = false;
 
         [HideInInspector] public string PickupAnimationTrigger = "PickUp";
-        public ItemPickup canPickup;
+        public bool pickingUp = false;
+        public float pickupAnimLength = 2f;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -357,11 +358,12 @@ namespace StarterAssets
 
         private void PickUp()
         {
-            if (canPickup.isPickingUpItem)
+            if (pickingUp)
             {
                 if (_hasAnimator)
                 {
                     _animator.SetBool(_animIDPickUp, true);
+                    StartCoroutine(PickUpAnimStop());
                 }
             }
             else
@@ -371,6 +373,12 @@ namespace StarterAssets
                     _animator.SetBool(_animIDPickUp, false);
                 }
             }
+        }
+
+        public IEnumerator PickUpAnimStop()
+        {
+            yield return new WaitForSeconds(pickupAnimLength);
+            pickingUp = false;
         }
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
