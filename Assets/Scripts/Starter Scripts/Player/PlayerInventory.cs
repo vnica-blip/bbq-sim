@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using StarterAssets;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,13 +39,12 @@ public class PlayerInventory : MonoBehaviour
     public GameObject inventoryImageEmpty4;
     List<Image> inventoryImageList;
     public float padding = 0f;
+    public ThirdPersonController playerController;
 
     void Start()
     {
         inventory = new List<Item>();
         inventoryImageList = new List<Image>();
-
-        Debug.Log("Inventory initialized.");
     }
 
     void Update()
@@ -54,13 +54,19 @@ public class PlayerInventory : MonoBehaviour
             AllItemsCollected();
         }
 
-        Debug.Log("Inventory Count in Update: " + inventory.Count);
+        //Debug.Log("Inventory Count in Update: " + inventory.Count);
     }
 
     public void AddItemToInventory(Item newItem)
     {
         inventory.Add(newItem);
-        Debug.Log("Item added. New inventory count: " + inventory.Count);
+        playerController.pickingUp = true;
+        StartCoroutine(playerController.PickUpAnimStop());
+        if (playerController.pickingUp)
+        {
+            Debug.Log("Picked up an item");
+        }
+        //Debug.Log("Item added. New inventory count: " + inventory.Count);
         if (useUI)
         {
             AddItemToUI(newItem);

@@ -5712,6 +5712,7 @@ MonoBehaviour:
   inventoryImageEmpty3: {fileID: 1395851345}
   inventoryImageEmpty4: {fileID: 1425444074}
   padding: 0
+  playerController: {fileID: 4416926083450906659}
 --- !u!1 &1740087262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6533758491483909306, guid: acbdbfa84226c624388710f2feca1b66,
@@ -25180,8 +25181,10 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  PlayerInventory: {fileID: 0}
   PickupAnimationTrigger: PickUp
-  canPickup: {fileID: 637491144}
+  pickingUp: 0
+  pickupAnimLength: 2
 --- !u!114 &4416926083450906660
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -76,8 +76,11 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
+        public PlayerInventory PlayerInventory;
+
         [HideInInspector] public string PickupAnimationTrigger = "PickUp";
-        public bool canPickup;
+        public bool pickingUp = false;
+        public float pickupAnimLength = 2f;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -165,8 +168,6 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             PickUp();
-
-            canPickup = GetComponent<ItemPickup>().isPickingUpItem;
         }
 
         private void LateUpdate()
@@ -359,11 +360,12 @@ namespace StarterAssets
 
         private void PickUp()
         {
-            if (canPickup)
+            if (pickingUp)
             {
                 if (_hasAnimator)
                 {
                     _animator.SetBool(_animIDPickUp, true);
+                    StartCoroutine(PickUpAnimStop());
                 }
             }
             else
@@ -373,6 +375,12 @@ namespace StarterAssets
                     _animator.SetBool(_animIDPickUp, false);
                 }
             }
+        }
+
+        public IEnumerator PickUpAnimStop()
+        {
+            yield return new WaitForSeconds(pickupAnimLength);
+            pickingUp = false;
         }
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)

@@ -14,8 +14,13 @@ public class ItemPickup : MonoBehaviour
     public Color spriteDye = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     public GameObject fToPickUp;
     public AudioSource pickUpSFX;
-    public bool isPickingUpItem;
+    public bool isPickingUpItem = false;
 
+
+    void Update()
+    {
+
+    }
     private void OnTriggerStay(Collider collision)
     {
         if (collision.tag == "Player" && Input.GetKeyDown(KeyCode.F))
@@ -24,6 +29,11 @@ public class ItemPickup : MonoBehaviour
             inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
 
             isPickingUpItem = true;
+                if (isPickingUpItem)
+                {
+                    Debug.Log("Picked up an item");
+                }
+            
             this.gameObject.SetActive(false);
             pickUpSFX.Play();
             if (this.gameObject.activeSelf)
@@ -35,14 +45,6 @@ public class ItemPickup : MonoBehaviour
                 fToPickUp.SetActive(false);
             }
         }
-        StartCoroutine(PickUpAnimWait());
-    }
-
-    private IEnumerator PickUpAnimWait()
-    {
-        yield return new WaitForSeconds(2);
-        isPickingUpItem = false;
-        yield return null;
     }
 
     private void OnTriggerEnter(Collider collision)
