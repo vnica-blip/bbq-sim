@@ -24476,8 +24476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68e1c693da58af4580fe45731a5f307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 4416926083450906659}
-  playerAnimator: {fileID: 6982812147834300648}
+  controller: {fileID: 4416926083450906658}
   levelChange: {fileID: 1822975891}
   fadeOut: {fileID: 1542092338}
   transitionLength: 2
