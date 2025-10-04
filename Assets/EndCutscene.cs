@@ -16,17 +16,22 @@ public class EndCutscene : MonoBehaviour
         //other.name should equal the root of your Player object
         if (other.tag == "Player")
         {
-            controller.FreezePlayer();
+            FreezePlayer();
             fadeOut.SetActive(true);
             StartCoroutine(CutsceneStart());
         }
     }
 
+    void FreezePlayer()
+    {
+        controller.enabled = false;
+    }
+
     public IEnumerator CutsceneStart()
     {
         yield return new WaitForSeconds(transitionLength);
-        levelChange.SetActive (true);
-        
+        levelChange.SetActive(true);
+
         yield return null;
     }
 }

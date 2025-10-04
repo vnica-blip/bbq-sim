@@ -25253,7 +25253,6 @@ MonoBehaviour:
   LockCameraPosition: 0
   PickupAnimationTrigger: PickUp
   pickingUp: 0
-  pickupAnimLength: 2
 --- !u!114 &4416926083450906660
 MonoBehaviour:
   m_ObjectHideFlags: 0

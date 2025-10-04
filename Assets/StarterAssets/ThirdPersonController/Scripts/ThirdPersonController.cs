@@ -79,7 +79,6 @@ namespace StarterAssets
 
         [HideInInspector] public string PickupAnimationTrigger = "PickUp";
         public bool pickingUp = false;
-        public float pickupAnimLength = 2f;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -364,7 +363,7 @@ namespace StarterAssets
                 if (_hasAnimator)
                 {
                     _animator.SetBool(_animIDPickUp, true);
-                    FreezePlayer();
+                    //FreezePlayer();
                     StartCoroutine(PickUpAnimStop());
                 }
             }
@@ -379,12 +378,12 @@ namespace StarterAssets
 
         public IEnumerator PickUpAnimStop()
         {
-            yield return new WaitForSeconds(pickupAnimLength);
+            yield return new WaitForEndOfFrame();
             pickingUp = false;
-            UnfreezePlayer();
+            //UnfreezePlayer();
         }
 
-        public void FreezePlayer()
+        /*public void FreezePlayer()
         {
             _controller.enabled = false;
         }
@@ -392,7 +391,7 @@ namespace StarterAssets
         public void UnfreezePlayer()
         {
             _controller.enabled = true;
-        }
+        }*/
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
         {
