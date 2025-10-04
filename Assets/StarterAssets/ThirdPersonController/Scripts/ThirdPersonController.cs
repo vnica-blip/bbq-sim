@@ -76,8 +76,6 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
-        public PlayerInventory PlayerInventory;
-
         [HideInInspector] public string PickupAnimationTrigger = "PickUp";
         public bool pickingUp = false;
         public float pickupAnimLength = 2f;

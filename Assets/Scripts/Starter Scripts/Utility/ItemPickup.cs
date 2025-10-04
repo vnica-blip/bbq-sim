@@ -14,7 +14,6 @@ public class ItemPickup : MonoBehaviour
     public Color spriteDye = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     public GameObject fToPickUp;
     public AudioSource pickUpSFX;
-    public bool isPickingUpItem = false;
 
 
     void Update()
@@ -27,12 +26,6 @@ public class ItemPickup : MonoBehaviour
         {
             collision.TryGetComponent<PlayerInventory>(out PlayerInventory inv);
             inv.AddItemToInventory(new PlayerInventory.Item(itemName, itemID, displaySprite, spriteDye, destroyOnUse));
-
-            isPickingUpItem = true;
-                if (isPickingUpItem)
-                {
-                    Debug.Log("Picked up an item");
-                }
             
             this.gameObject.SetActive(false);
             pickUpSFX.Play();

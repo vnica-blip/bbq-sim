@@ -28,6 +28,11 @@ public class EndCutscene : MonoBehaviour
         movement.enabled = false;
     }
 
+    public void UnfreezePlayer()
+    {
+        movement.enabled = true;
+    }
+
     public IEnumerator CutsceneStart()
     {
         yield return new WaitForEndOfFrame();
