@@ -12415,6 +12415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 573957601112778193}
   - component: {fileID: 711373211374270390}
+  - component: {fileID: 941584130769242903}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: GameManager
@@ -12422,6 +12423,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &941584130769242903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941584130769242902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925823809ede1b7488995e60c93a518c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showCursor: 1
 --- !u!4 &1054072931792778750
 Transform:
   m_ObjectHideFlags: 0
