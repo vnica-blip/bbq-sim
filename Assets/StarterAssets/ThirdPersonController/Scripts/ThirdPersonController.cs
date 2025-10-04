@@ -77,7 +77,7 @@ namespace StarterAssets
         public bool LockCameraPosition = false;
 
         [HideInInspector] public string PickupAnimationTrigger = "PickUp";
-        public ItemPickup canPickup;
+        public bool canPickup;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -165,6 +165,8 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             PickUp();
+
+            canPickup = GetComponent<ItemPickup>().isPickingUpItem;
         }
 
         private void LateUpdate()
@@ -357,7 +359,7 @@ namespace StarterAssets
 
         private void PickUp()
         {
-            if (canPickup.isPickingUpItem)
+            if (canPickup)
             {
                 if (_hasAnimator)
                 {
