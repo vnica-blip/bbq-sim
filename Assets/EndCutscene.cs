@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class EndCutscene : MonoBehaviour
 {
-    public ThirdPersonController movement;
-    public Animator playerAnimator;
+    public ThirdPersonController controller;
     public GameObject levelChange;
     public GameObject fadeOut;
     public float transitionLength = 2f;
@@ -17,26 +16,14 @@ public class EndCutscene : MonoBehaviour
         //other.name should equal the root of your Player object
         if (other.tag == "Player")
         {
-            FreezePlayer();
+            controller.FreezePlayer();
             fadeOut.SetActive(true);
             StartCoroutine(CutsceneStart());
         }
     }
 
-    public void FreezePlayer()
-    {
-        movement.enabled = false;
-    }
-
-    public void UnfreezePlayer()
-    {
-        movement.enabled = true;
-    }
-
     public IEnumerator CutsceneStart()
     {
-        yield return new WaitForEndOfFrame();
-        playerAnimator.enabled = false;
         yield return new WaitForSeconds(transitionLength);
         levelChange.SetActive (true);
         

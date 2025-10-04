@@ -2,6 +2,7 @@
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -363,6 +364,7 @@ namespace StarterAssets
                 if (_hasAnimator)
                 {
                     _animator.SetBool(_animIDPickUp, true);
+                    FreezePlayer();
                     StartCoroutine(PickUpAnimStop());
                 }
             }
@@ -379,6 +381,17 @@ namespace StarterAssets
         {
             yield return new WaitForSeconds(pickupAnimLength);
             pickingUp = false;
+            UnfreezePlayer();
+        }
+
+        public void FreezePlayer()
+        {
+            _controller.enabled = false;
+        }
+
+        public void UnfreezePlayer()
+        {
+            _controller.enabled = true;
         }
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
