@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34884c3f2e673504791e5e05f6e2e1b6
+guid: ec5d9f0403bec124fa7d08ee853f3590
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -25,8 +25,7 @@ ModelImporter:
       translation animation that will be discarded.\n\t'beryl_rig_no_props:m_spine_01_jnt'
       has translation animation that will be discarded.\n\t'beryl_rig_no_props:m_spine_02_jnt'
       has translation animation that will be discarded.\n\t'beryl_rig_no_props:m_neck_jnt'
-      has translation animation that will be discarded.\n\t'beryl_rig_no_props:m_neck_00_jnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'beryl_rig_no_props:l_clavicle_jnt'
+      has translation animation that will be discarded.\n\t'beryl_rig_no_props:l_clavicle_jnt'
       has translation animation that will be discarded.\n\t'beryl_rig_no_props:r_clavicle_jnt'
       has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
@@ -42,18 +41,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Interact
+      name: Walk
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 0
-      lastFrame: 80
+      lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -561,13 +560,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: STAND_INTERACT_2(Clone)
+    - name: WALK(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:beryl_mesh
-      parentName: STAND_INTERACT_2(Clone)
+      parentName: WALK(Clone)
       position: {x: -0, y: 0, z: 0.035388272}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -627,7 +626,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:anim_ctrls_grp
-      parentName: STAND_INTERACT_2(Clone)
+      parentName: WALK(Clone)
       position: {x: -0.00017814049, y: -0.000000038305974, z: -0.00015363813}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -638,7 +637,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:root_ctrl
       parentName: beryl_rig_no_props:root_grp
-      position: {x: 0.9266066, y: 0, z: 0}
+      position: {x: 0.99508613, y: 0, z: -0.45271936}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_pelvis_jnt_grp
@@ -648,8 +647,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_pelvis_jnt_ctrl
       parentName: beryl_rig_no_props:m_pelvis_jnt_grp
-      position: {x: -0.08195689, y: -0.028073195, z: 0}
-      rotation: {x: 0, y: -0, z: -0.016009817, w: 0.99987185}
+      position: {x: 0.02189015, y: -0.051486637, z: -0.02981646}
+      rotation: {x: 0.0012280183, y: -0.05878403, z: 0.020849649, w: 0.99805224}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:fSkirtA_01_jnt_controls_grp
       parentName: beryl_rig_no_props:m_pelvis_jnt_ctrl
@@ -1189,12 +1188,12 @@ ModelImporter:
     - name: beryl_rig_no_props:m_spine_00_jnt_grp
       parentName: beryl_rig_no_props:m_spine_00_jnt_controls_grp
       position: {x: -0, y: -0.0964373, z: 0.00000003819794}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      rotation: {x: -2.7105054e-19, y: -4.2351647e-22, z: 1.7279472e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spine_00_jnt_ctrl
       parentName: beryl_rig_no_props:m_spine_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.015238888, y: 0.0000975713, z: 0.0030079093, w: 0.99987936}
+      rotation: {x: -0.011066461, y: 0, z: -0, w: 0.9999388}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spine_01_jnt_grp
       parentName: beryl_rig_no_props:m_spine_00_jnt_ctrl
@@ -1204,7 +1203,7 @@ ModelImporter:
     - name: beryl_rig_no_props:m_spine_01_jnt_ctrl
       parentName: beryl_rig_no_props:m_spine_01_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.034785558, y: -0.00009831526, z: 0.006530049, w: 0.99937344}
+      rotation: {x: -0.011066461, y: 0, z: -0, w: 0.9999388}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spine_02_jnt_grp
       parentName: beryl_rig_no_props:m_spine_01_jnt_ctrl
@@ -1214,7 +1213,7 @@ ModelImporter:
     - name: beryl_rig_no_props:m_spine_02_jnt_ctrl
       parentName: beryl_rig_no_props:m_spine_02_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.033281572, y: 0.00727723, z: 0.0036554225, w: 0.99941283}
+      rotation: {x: -0.001188015, y: 0, z: -0, w: 0.9999993}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_clavicle_jnt_controls_grp
       parentName: beryl_rig_no_props:m_spine_02_jnt_ctrl
@@ -1224,12 +1223,12 @@ ModelImporter:
     - name: beryl_rig_no_props:l_clavicle_jnt_grp
       parentName: beryl_rig_no_props:l_clavicle_jnt_controls_grp
       position: {x: -0.000015215874, y: -0.00000045776366, z: -0.025079936}
-      rotation: {x: -0.013781618, y: -0.007239859, z: 0.0029575035, w: 0.9998745}
+      rotation: {x: 0.022966193, y: -0.045748074, z: 0.006128239, w: 0.99867016}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_clavicle_jnt_ctrl
       parentName: beryl_rig_no_props:l_clavicle_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.047684718, y: -0.025348183, z: -0.0012936351, w: 0.9985399}
+      rotation: {x: 0, y: -0.048687935, z: -0, w: 0.99881405}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:left_arm
       parentName: beryl_rig_no_props:l_clavicle_jnt_ctrl
@@ -1248,8 +1247,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:left_hand_ctrl_grp
       parentName: beryl_rig_no_props:left_arm
-      position: {x: -0.0031623049, y: -0.1362707, z: 0.008983567}
-      rotation: {x: -0.12772043, y: 0.060184218, z: 0.099604584, w: 0.98495907}
+      position: {x: 0.038629144, y: -0.14968865, z: -0.1774822}
+      rotation: {x: -0.14042892, y: -0.14642808, z: 0.13272679, w: 0.970166}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_thumb_meta_jnt_controls_grp
       parentName: beryl_rig_no_props:left_hand_ctrl_grp
@@ -1434,12 +1433,12 @@ ModelImporter:
     - name: beryl_rig_no_props:l_upperarm_ik
       parentName: beryl_rig_no_props:l_arm_ik_setup_grp
       position: {x: -0.19131231, y: 1.0770892, z: -0.06826274}
-      rotation: {x: 0.031039333, y: -0.06540802, z: 0.45119074, w: 0.88948596}
+      rotation: {x: 0.031039326, y: -0.06540802, z: 0.45119074, w: 0.88948596}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_lowerarm_ik
       parentName: beryl_rig_no_props:l_upperarm_ik
       position: {x: -0.2513617, y: 5.684342e-16, z: 1.4210854e-16}
-      rotation: {x: -8.525013e-31, y: 0.32368252, z: 1.0193836e-29, w: 0.94616574}
+      rotation: {x: 1.840512e-29, y: 0.32368252, z: 2.5187715e-29, w: 0.94616574}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hand_ik
       parentName: beryl_rig_no_props:l_lowerarm_ik
@@ -1449,17 +1448,17 @@ ModelImporter:
     - name: beryl_rig_no_props:l_upperarm_fk
       parentName: beryl_rig_no_props:l_arm_ik_setup_grp
       position: {x: -0.19131231, y: 1.0770892, z: -0.06826274}
-      rotation: {x: 0.17572854, y: -0.050094858, z: 0.54265285, w: 0.81984013}
+      rotation: {x: 0.086293474, y: -0.29100567, z: 0.49087742, w: 0.81664467}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_lowerarm_fk
       parentName: beryl_rig_no_props:l_upperarm_fk
-      position: {x: -0.2513617, y: 7.4606985e-16, z: 1.0658141e-16}
-      rotation: {x: -0.00024319405, y: 0.3690539, z: 0.0077271, w: 0.9293758}
+      position: {x: -0.2513617, y: 6.217249e-16, z: 2.842171e-16}
+      rotation: {x: 0, y: 0.27825013, z: -0, w: 0.96050864}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hand_fk
       parentName: beryl_rig_no_props:l_lowerarm_fk
-      position: {x: -0.22891177, y: -3.907985e-16, z: 0}
-      rotation: {x: -0.047541857, y: -0.0999255, z: 0.06367766, w: 0.99181646}
+      position: {x: -0.22891177, y: -8.881784e-16, z: 7.105427e-17}
+      rotation: {x: 0.14761391, y: -0.07330629, z: 0.1607019, w: 0.973145}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_upperarm_fk_controls_grp
       parentName: beryl_rig_no_props:left_arm
@@ -1469,12 +1468,12 @@ ModelImporter:
     - name: beryl_rig_no_props:l_upperarm_fk_grp
       parentName: beryl_rig_no_props:l_upperarm_fk_controls_grp
       position: {x: 0.14563192, y: 0.19854972, z: -0.040797748}
-      rotation: {x: 0.084930375, y: -0.06424041, z: 0.44777685, w: 0.88778144}
+      rotation: {x: 0.014252499, y: -0.09841447, z: 0.4520325, w: 0.8864413}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_upperarm_fk_ctrl
       parentName: beryl_rig_no_props:l_upperarm_fk_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.09880815, y: -0.024405885, z: 0.10761742, w: 0.9889691}
+      rotation: {x: -0.06713904, y: 0.21684988, z: 0.15754876, w: 0.9610655}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_lowerarm_fk_grp
       parentName: beryl_rig_no_props:l_upperarm_fk_ctrl
@@ -1484,7 +1483,7 @@ ModelImporter:
     - name: beryl_rig_no_props:l_lowerarm_fk_ctrl
       parentName: beryl_rig_no_props:l_lowerarm_fk_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.0027312294, y: 0.04836345, z: 0.0072324006, w: 0.9987999}
+      rotation: {x: 0, y: 0.26302838, z: -0, w: 0.9647881}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hand_fk_grp
       parentName: beryl_rig_no_props:l_lowerarm_fk_ctrl
@@ -1494,7 +1493,7 @@ ModelImporter:
     - name: beryl_rig_no_props:l_hand_fk_ctrl
       parentName: beryl_rig_no_props:l_hand_fk_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.20909265, y: 0.06065888, z: -0.0647404, w: 0.9738632}
+      rotation: {x: 0, y: -0.11334647, z: -0, w: 0.99355555}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_clavicle_jnt_controls_grp
       parentName: beryl_rig_no_props:m_spine_02_jnt_ctrl
@@ -1504,12 +1503,12 @@ ModelImporter:
     - name: beryl_rig_no_props:r_clavicle_fk_grp
       parentName: beryl_rig_no_props:r_clavicle_jnt_controls_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.013781618, y: -0.007239859, z: -0.0029575035, w: 0.9998745}
+      rotation: {x: -0.022966193, y: -0.045748074, z: -0.006128239, w: 0.99867016}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_clavicle_fk_ctrl
       parentName: beryl_rig_no_props:r_clavicle_fk_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.04767731, y: -0.025362127, z: -0.0010016664, w: 0.9985403}
+      rotation: {x: 0, y: -0.048687935, z: -0, w: 0.99881405}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:right_arm
       parentName: beryl_rig_no_props:r_clavicle_fk_ctrl
@@ -1533,18 +1532,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_upperarm_fk
       parentName: beryl_rig_no_props:right_arm
-      position: {x: 0.19131228, y: 1.07709, z: -0.0682627}
-      rotation: {x: 0.79452974, y: -0.6002123, z: -0.09089683, w: -0.014340239}
+      position: {x: 0.19131213, y: 1.07709, z: -0.06826305}
+      rotation: {x: 0.850665, y: -0.49932083, z: 0.16134341, w: 0.031877976}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_lowerarm_fk
       parentName: beryl_rig_no_props:r_upperarm_fk
-      position: {x: 0.2513622, y: 0.00000046023362, z: -0.00000042289912}
-      rotation: {x: 0.0041980236, y: 0.36908662, z: 0.005963411, w: 0.9293664}
+      position: {x: 0.2513623, y: 0.00000045854625, z: -0.0000004805169}
+      rotation: {x: 1.2356788e-16, y: 0.27825013, z: 5.441799e-16, w: 0.96050864}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_hand_fk
       parentName: beryl_rig_no_props:r_lowerarm_fk
-      position: {x: 0.22891168, y: -0.0000003162685, z: 0.00000038007835}
-      rotation: {x: 0.37447676, y: -0.15434763, z: 0.10345094, w: 0.9084283}
+      position: {x: 0.2289117, y: -0.00000035613417, z: 0.00000044116914}
+      rotation: {x: 0.14761391, y: -0.07330629, z: 0.1607019, w: 0.973145}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_arm_ik_ctrl_grp
       parentName: beryl_rig_no_props:right_arm
@@ -1559,12 +1558,12 @@ ModelImporter:
     - name: beryl_rig_no_props:r_upperarm_fk_grp
       parentName: beryl_rig_no_props:right_arm
       position: {x: 0.19131231, y: 1.0770892, z: -0.06826274}
-      rotation: {x: 0.45532873, y: 0.8875566, z: -0.022791918, w: -0.06632915}
+      rotation: {x: 0.44972575, y: 0.89130217, z: 0.047783278, w: -0.032311242}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_upperarm_fk_ctrl
       parentName: beryl_rig_no_props:r_upperarm_fk_grp
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.029260257, y: 0.048185106, z: 0.1679272, w: 0.98418623}
+      position: {x: 1.3805066e-32, y: -4.092216e-32, z: -1.3805066e-32}
+      rotation: {x: -0.041763067, y: 0.22313082, z: 0.046012413, w: 0.9728059}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_lowerarm_fk_grp
       parentName: beryl_rig_no_props:r_upperarm_fk_ctrl
@@ -1574,7 +1573,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_lowerarm_fk_ctrl
       parentName: beryl_rig_no_props:r_lowerarm_fk_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.0020417746, y: -0.04839746, z: 0.0070012035, w: 0.9988015}
+      rotation: {x: 0, y: -0.26302838, z: -0, w: 0.9647881}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_hand_fk_grp
       parentName: beryl_rig_no_props:r_lowerarm_fk_ctrl
@@ -1584,7 +1583,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_hand_fk_ctrl
       parentName: beryl_rig_no_props:r_hand_fk_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.20909265, y: 0.06065888, z: -0.0647404, w: 0.9738632}
+      rotation: {x: 0, y: 0.11334647, z: -0, w: 0.99355555}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_neck_jnt_controls_grp
       parentName: beryl_rig_no_props:m_spine_02_jnt_ctrl
@@ -1599,7 +1598,7 @@ ModelImporter:
     - name: beryl_rig_no_props:m_neck_jnt_ctrl
       parentName: beryl_rig_no_props:m_neck_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.018152818, y: 0.0072210757, z: -0.0037651362, w: 0.99980205}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_neck_00_jnt_grp
       parentName: beryl_rig_no_props:m_neck_jnt_ctrl
@@ -1609,17 +1608,17 @@ ModelImporter:
     - name: beryl_rig_no_props:m_neck_00_jnt_ctrl
       parentName: beryl_rig_no_props:m_neck_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.01380106, y: 0.0052516586, z: -0.002830086, w: 0.999887}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_head_jnt_grp
       parentName: beryl_rig_no_props:m_neck_00_jnt_ctrl
       position: {x: -0, y: 0.07483105, z: 0}
-      rotation: {x: -0.009414987, y: -0.019711502, z: 0.009543597, w: 0.99971586}
+      rotation: {x: 0.022966193, y: -0.045748074, z: 0.006128239, w: 0.99867016}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_head_jnt_ctrl
       parentName: beryl_rig_no_props:m_head_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.0772628, y: -0.001463854, z: -0.0024690598, w: 0.99700665}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandB01_jnt_controls_grp
       parentName: beryl_rig_no_props:m_head_jnt_ctrl
@@ -2399,22 +2398,22 @@ ModelImporter:
     - name: beryl_rig_no_props:l_upper_leg_ik
       parentName: beryl_rig_no_props:left_leg
       position: {x: -1.4210854e-16, y: 0, z: -2.6645352e-17}
-      rotation: {x: -0.13943574, y: 0.11642448, z: 0.07878145, w: 0.98020226}
+      rotation: {x: -0.10819975, y: 0.34210834, z: 0.042237658, w: 0.9324541}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_knee_ik
       parentName: beryl_rig_no_props:l_upper_leg_ik
       position: {x: -0.3758627, y: 0.00000052477725, z: 0.00000007016795}
-      rotation: {x: 0.00000026960592, y: -0.3306144, z: 0.00000030146015, w: 0.94376594}
+      rotation: {x: 0.00000026737635, y: -0.33546552, z: 0.00000029852797, w: 0.9420525}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_foot_ik
       parentName: beryl_rig_no_props:l_knee_ik
       position: {x: -0.28288633, y: 0.00000012495252, z: -0.0000002466877}
-      rotation: {x: 0.11607521, y: 0.105301835, z: -0.011277021, w: 0.98757833}
+      rotation: {x: 0.054151457, y: -0.09476498, z: 0.03371914, w: 0.99345374}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_toe_ik
       parentName: beryl_rig_no_props:l_foot_ik
       position: {x: 0.00000004218921, y: 0.000000003499588, z: 0.17129312}
-      rotation: {x: 4.244926e-13, y: 0.1506269, z: 7.345193e-12, w: 0.9885907}
+      rotation: {x: 7.7844784e-13, y: 0.1506269, z: 1.3469844e-11, w: 0.9885907}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_toetip_ik_end
       parentName: beryl_rig_no_props:l_toe_ik
@@ -2423,8 +2422,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_upper_leg_fk
       parentName: beryl_rig_no_props:left_leg
-      position: {x: 2.842171e-16, y: -7.105427e-17, z: -1.7763568e-17}
-      rotation: {x: 0.0000010875783, y: -0.000054055843, z: 0.00000018807731, w: 1}
+      position: {x: 1.4210854e-16, y: 0, z: 0}
+      rotation: {x: 0.0000011007895, y: -0.09823615, z: 0.00000008038761, w: 0.99516314}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_knee_fk
       parentName: beryl_rig_no_props:l_upper_leg_fk
@@ -2438,7 +2437,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_toe_fk
       parentName: beryl_rig_no_props:l_foot_fk
-      position: {x: 0.00000004218921, y: 0.0000000034995884, z: 0.17129312}
+      position: {x: 0.00000004218921, y: 0.0000000034995877, z: 0.17129312}
       rotation: {x: 0, y: 0.1506269, z: -0, w: 0.9885907}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_toetip_fk_end
@@ -2493,8 +2492,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_bootStrapA01_jnt_controls_grp
       parentName: beryl_rig_no_props:left_leg
-      position: {x: -0.4713919, y: 0.0060988613, z: 0.000081758495}
-      rotation: {x: 0.015375189, y: -0.18958475, z: -0.5251352, w: 0.82949036}
+      position: {x: -0.41867575, y: 0.06702208, z: 0.2042679}
+      rotation: {x: -0.11039803, y: -0.0021471805, z: -0.56991684, w: 0.81424963}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_bootStrapA01_jnt_grp
       parentName: beryl_rig_no_props:l_bootStrapA01_jnt_controls_grp
@@ -2508,8 +2507,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_bootStrapB01_jnt_controls_grp
       parentName: beryl_rig_no_props:left_leg
-      position: {x: -0.52280194, y: -0.022098389, z: -0.011230292}
-      rotation: {x: 0.015375189, y: -0.18958475, z: -0.5251352, w: 0.82949036}
+      position: {x: -0.4731804, y: 0.046015184, z: 0.21667734}
+      rotation: {x: -0.11039803, y: -0.0021471805, z: -0.56991684, w: 0.81424963}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_bootStrapB01_jnt_grp
       parentName: beryl_rig_no_props:l_bootStrapB01_jnt_controls_grp
@@ -2529,22 +2528,22 @@ ModelImporter:
     - name: beryl_rig_no_props:r_upper_leg_ik
       parentName: beryl_rig_no_props:right_leg
       position: {x: 1.4210854e-16, y: 0, z: -8.881784e-18}
-      rotation: {x: 0.071380384, y: -0.0497627, z: -0.06865324, w: 0.99383867}
+      rotation: {x: 0.021173393, y: -0.22924781, z: -0.0013935504, w: 0.9731368}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_knee_ik
       parentName: beryl_rig_no_props:r_upper_leg_ik
       position: {x: 0.3758627, y: -0.00000052477725, z: -0.00000007016795}
-      rotation: {x: 0.00000036317104, y: -0.022975175, z: 0.0000011605881, w: 0.9997361}
+      rotation: {x: 0.00000034694847, y: -0.000044666936, z: 0.0000011878559, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_foot_ik
       parentName: beryl_rig_no_props:r_knee_ik
       position: {x: 0.28288633, y: -0.00000012495252, z: 0.0000002466877}
-      rotation: {x: -0.19130982, y: -0.037561152, z: 0.20339678, w: 0.95948917}
+      rotation: {x: 0.05158875, y: -0.03877316, z: 0.060772374, w: 0.99606323}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_toe_ik
       parentName: beryl_rig_no_props:r_foot_ik
       position: {x: -0.00000004218921, y: -0.000000003499588, z: -0.17129312}
-      rotation: {x: 0.00000002769345, y: 0.15062696, z: 0.000000004226608, w: 0.98859066}
+      rotation: {x: 0.023928046, y: 0.34365332, z: 0.0034815595, w: 0.93878525}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_toetip_ik_end
       parentName: beryl_rig_no_props:r_toe_ik
@@ -2553,13 +2552,13 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_upper_leg_fk
       parentName: beryl_rig_no_props:right_leg
-      position: {x: 7.105427e-17, y: 4.2632563e-16, z: -7.5495166e-17}
-      rotation: {x: 0.0036188297, y: -6.909655e-17, z: 1.5357272e-16, w: 0.99999344}
+      position: {x: 1.4210854e-16, y: 2.842171e-16, z: 7.105427e-17}
+      rotation: {x: 0.0036188297, y: -4.1340968e-17, z: 1.5476535e-16, w: 0.99999344}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_knee_fk
       parentName: beryl_rig_no_props:r_upper_leg_fk
       position: {x: 0.3758627, y: -0.00000052477725, z: -0.00000007016795}
-      rotation: {x: -2.9056618e-17, y: 2.7755576e-17, z: -1.3487475e-16, w: 1}
+      rotation: {x: -3.1225023e-17, y: -4.1633363e-17, z: -1.3444107e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_foot_fk
       parentName: beryl_rig_no_props:r_knee_fk
@@ -2628,8 +2627,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapB01_jnt_controls_grp
       parentName: beryl_rig_no_props:chest_strap_controls_grp
-      position: {x: -0.09429762, y: 0.05351387, z: 0.17392972}
-      rotation: {x: -0.0074093477, y: 0.0012383701, z: 0.007273687, w: 0.99994534}
+      position: {x: -0.093468875, y: 0.05843895, z: 0.16785283}
+      rotation: {x: -0.017254746, y: -0.00028254135, z: 0.00023212621, w: 0.9998511}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapB01_jnt_grp
       parentName: beryl_rig_no_props:l_chestStrapB01_jnt_controls_grp
@@ -2653,8 +2652,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA01_jnt_controls_grp
       parentName: beryl_rig_no_props:chest_strap_controls_grp
-      position: {x: -0.09775952, y: 0.10172424, z: 0.17276718}
-      rotation: {x: -0.019248946, y: -0.007222016, z: 0.011460319, w: 0.99972296}
+      position: {x: -0.09421573, y: 0.10372002, z: 0.1597425}
+      rotation: {x: -0.012960809, y: -0.00313937, z: 0.002602236, w: 0.99990773}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA01_jnt_grp
       parentName: beryl_rig_no_props:l_chestStrapA01_jnt_controls_grp
@@ -2678,8 +2677,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapA01_jnt_controls_grp
       parentName: beryl_rig_no_props:chest_strap_controls_grp
-      position: {x: 0.09084027, y: 0.0971476, z: 0.16565152}
-      rotation: {x: -0.011586205, y: 0.99979705, z: 0.015029862, w: 0.0067612855}
+      position: {x: 0.09385301, y: 0.10427704, z: 0.16042261}
+      rotation: {x: -0.0025783945, y: 0.9999077, z: -0.012976346, w: 0.003110706}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapA01_jnt_grp
       parentName: beryl_rig_no_props:r_chestStrapA01_jnt_controls_grp
@@ -2703,8 +2702,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapB01_jnt_controls_grp
       parentName: beryl_rig_no_props:chest_strap_controls_grp
-      position: {x: 0.09273853, y: 0.055509415, z: 0.17236993}
-      rotation: {x: -0.0071054967, y: 0.99996245, z: -0.0047744643, w: -0.0013805381}
+      position: {x: 0.09351162, y: 0.058475494, z: 0.16796093}
+      rotation: {x: -0.00018288412, y: 0.9998509, z: -0.01726567, w: 0.0002226198}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapB01_jnt_grp
       parentName: beryl_rig_no_props:r_chestStrapB01_jnt_controls_grp
@@ -2783,13 +2782,13 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_ctrlPCSGrp
       parentName: beryl_rig_no_props:r_dagger_handle_ctrlPgSGrp
-      position: {x: -0.032694086, y: 0.0082640145, z: 0.08759936}
-      rotation: {x: -0.014202132, y: 0.0046550375, z: -0.0057397108, w: 0.99987185}
+      position: {x: -0.027554572, y: -0.04912457, z: 0.013331449}
+      rotation: {x: 0.012951726, y: 0.039489, z: -0.020085352, w: 0.9989342}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_ctrl
       parentName: beryl_rig_no_props:r_dagger_handle_ctrlPCSGrp
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.0013528137, y: 0.0010310408, z: -0.0022331753}
+      rotation: {x: -0, y: 1.7520707e-16, z: -4.510281e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_00_controls_grp
       parentName: beryl_rig_no_props:r_dagger_handle_ctrl
@@ -2833,8 +2832,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:right_hand_ctrl_grp
       parentName: beryl_rig_no_props:hand_ctrl_grp
-      position: {x: 0.18496431, y: -0.62246794, z: 0.28402278}
-      rotation: {x: -0.27779892, y: 0.7598326, z: -0.58381665, w: 0.068119675}
+      position: {x: 0.24201837, y: -0.6343726, z: 0.5032654}
+      rotation: {x: -0.25380793, y: 0.78440034, z: -0.5371131, w: -0.17834577}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_meta_jnt_controls_grp
       parentName: beryl_rig_no_props:right_hand_ctrl_grp
@@ -2849,7 +2848,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_thumb_meta_jnt_ctrl
       parentName: beryl_rig_no_props:r_thumb_meta_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.10207229, y: -0.14856367, z: -0.04093473, w: 0.9827688}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_base_jnt_grp
       parentName: beryl_rig_no_props:r_thumb_meta_jnt_ctrl
@@ -2859,7 +2858,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_thumb_base_jnt_ctrl
       parentName: beryl_rig_no_props:r_thumb_base_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.05328307, y: -0.0026884729, z: 0.018266493, w: 0.9984088}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_00_jnt_grp
       parentName: beryl_rig_no_props:r_thumb_base_jnt_ctrl
@@ -2869,7 +2868,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_thumb_00_jnt_ctrl
       parentName: beryl_rig_no_props:r_thumb_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.053235162, y: -0.002677564, z: 0.018407404, w: 0.9984088}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_pinky_00_jnt_controls_grp
       parentName: beryl_rig_no_props:right_hand_ctrl_grp
@@ -2884,7 +2883,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_pinky_00_jnt_ctrl
       parentName: beryl_rig_no_props:r_pinky_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.053299166, y: -0.01874478, z: -0.08089178, w: 0.9951203}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_pinky_01_jnt_grp
       parentName: beryl_rig_no_props:r_pinky_00_jnt_ctrl
@@ -2894,7 +2893,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_pinky_01_jnt_ctrl
       parentName: beryl_rig_no_props:r_pinky_01_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.054868694, y: -0.013169204, z: 0.08767514, w: 0.9945497}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_pinky_02_jnt_grp
       parentName: beryl_rig_no_props:r_pinky_01_jnt_ctrl
@@ -2919,7 +2918,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_ring_00_jnt_ctrl
       parentName: beryl_rig_no_props:r_ring_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.03289827, y: 0.004423975, z: -0.033057287, w: 0.9989021}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ring_01_jnt_grp
       parentName: beryl_rig_no_props:r_ring_00_jnt_ctrl
@@ -2929,7 +2928,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_ring_01_jnt_ctrl
       parentName: beryl_rig_no_props:r_ring_01_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.051032655, y: -0.023954723, z: 0.0026631597, w: 0.9984061}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ring_02_jnt_grp
       parentName: beryl_rig_no_props:r_ring_01_jnt_ctrl
@@ -2954,7 +2953,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_middle_00_jnt_ctrl
       parentName: beryl_rig_no_props:r_middle_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.061895933, y: -0.002437241, z: -0.024525864, w: 0.9977783}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_middle_01_jnt_grp
       parentName: beryl_rig_no_props:r_middle_00_jnt_ctrl
@@ -2964,7 +2963,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_middle_01_jnt_ctrl
       parentName: beryl_rig_no_props:r_middle_01_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.053423174, y: -0.018132756, z: -0.001553886, w: 0.9984061}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_middle_02_jnt_grp
       parentName: beryl_rig_no_props:r_middle_01_jnt_ctrl
@@ -2989,7 +2988,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_index_00_jnt_ctrl
       parentName: beryl_rig_no_props:r_index_00_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.058902875, y: 0.003238939, z: 0.017327255, w: 0.9981081}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_index_01_jnt_grp
       parentName: beryl_rig_no_props:r_index_00_jnt_ctrl
@@ -2999,7 +2998,7 @@ ModelImporter:
     - name: beryl_rig_no_props:r_index_01_jnt_ctrl
       parentName: beryl_rig_no_props:r_index_01_jnt_grp
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.052966487, y: -0.018891774, z: 0.0042320816, w: 0.9984086}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_index_02_jnt_grp
       parentName: beryl_rig_no_props:r_index_01_jnt_ctrl
@@ -3012,7 +3011,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:dnt
-      parentName: STAND_INTERACT_2(Clone)
+      parentName: WALK(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -3028,8 +3027,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:spine_base_fol
       parentName: beryl_rig_no_props:spine_follicles
-      position: {x: 0.8481906, y: 0.7937975, z: 0.0008741674}
-      rotation: {x: 0.0062863682, y: 0.0068135853, z: -0.7157645, w: 0.69828016}
+      position: {x: 0.988654, y: 0.7704433, z: -0.4224305}
+      rotation: {x: -0.040846944, y: 0.023751464, z: -0.71101785, w: 0.70158464}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spineribbon_0_jnt
       parentName: beryl_rig_no_props:spine_base_fol
@@ -3038,8 +3037,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:spine_center_fol
       parentName: beryl_rig_no_props:spine_follicles
-      position: {x: 0.85041386, y: 0.8922333, z: 0.0013320973}
-      rotation: {x: -0.0060412157, y: -0.0032972316, z: -0.7137731, w: 0.70034325}
+      position: {x: 0.98982, y: 0.8689107, z: -0.42524397}
+      rotation: {x: -0.044324655, y: 0.020319393, z: -0.7107865, w: 0.70171577}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spineribbon_1_jnt
       parentName: beryl_rig_no_props:spine_center_fol
@@ -3048,8 +3047,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:spine_chest_fol
       parentName: beryl_rig_no_props:spine_follicles
-      position: {x: 0.851726, y: 0.986178, z: -0.0002200716}
-      rotation: {x: -0.003879941, y: 0.0038762488, z: -0.7102177, w: 0.7039608}
+      position: {x: 0.99082243, y: 0.96283996, z: -0.42908266}
+      rotation: {x: -0.048279013, y: 0.016414776, z: -0.71052086, w: 0.70182604}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spineribbon_2_jnt
       parentName: beryl_rig_no_props:spine_chest_fol
@@ -3057,28 +3056,28 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:root
-      parentName: STAND_INTERACT_2(Clone)
-      position: {x: 0.9266066, y: 0, z: 0}
+      parentName: WALK(Clone)
+      position: {x: 0.99508613, y: 0, z: -0.45271936}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle
       parentName: beryl_rig_no_props:root
-      position: {x: 0.29244953, y: 0.59711033, z: 0.19954623}
-      rotation: {x: 0.019231783, y: -0.5660161, z: 0.2831479, w: 0.77400476}
+      position: {x: 0.37794197, y: 0.6028088, z: 0.21293643}
+      rotation: {x: 0.02360324, y: -0.60953367, z: 0.31193724, w: 0.7284276}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_00
       parentName: beryl_rig_no_props:r_dagger_handle
-      position: {x: -0.13436697, y: -1.2434498e-16, z: 1.4210854e-16}
+      position: {x: -0.13436697, y: -2.1316282e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_01
       parentName: beryl_rig_no_props:r_dagger_handle_00
-      position: {x: -0.12450877, y: 2.1316282e-16, z: -2.842171e-16}
+      position: {x: -0.12450877, y: 1.0658141e-16, z: -2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_02
       parentName: beryl_rig_no_props:r_dagger_handle_01
-      position: {x: -0.124296606, y: 1.2434498e-16, z: 2.842171e-16}
+      position: {x: -0.124296606, y: 1.5987211e-16, z: 2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_dagger_handle_end
@@ -3088,8 +3087,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:bag_jnt
       parentName: beryl_rig_no_props:root
-      position: {x: -0.3534343, y: 0.6094273, z: 0.14310811}
-      rotation: {x: -0.044413645, y: 0.26812962, z: -0.18758018, w: 0.9439002}
+      position: {x: -0.2575466, y: 0.56560415, z: 0.08076733}
+      rotation: {x: -0.042881016, y: 0.21040407, z: -0.15490298, w: 0.96431136}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_fur_00_jnt
       parentName: beryl_rig_no_props:bag_jnt
@@ -3098,7 +3097,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_fur_01_jnt
       parentName: beryl_rig_no_props:m_fur_00_jnt
-      position: {x: -0.07251312, y: 0, z: -1.0658141e-16}
+      position: {x: -0.07251312, y: 1.4210854e-16, z: 7.105427e-17}
       rotation: {x: 0, y: -0, z: -0.16883346, w: 0.98564464}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_fur_end
@@ -3108,8 +3107,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_pelvis_jnt
       parentName: beryl_rig_no_props:root
-      position: {x: -0.9265602, y: 0.6939384, z: 0}
-      rotation: {x: 0, y: -0, z: -0.016009817, w: 0.99987185}
+      position: {x: -0.994921, y: 0.7200772, z: 0.4428484}
+      rotation: {x: 0.12358012, y: -0.0065469043, z: -0.005542983, w: 0.99229753}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_mugStrap01_jnt
       parentName: beryl_rig_no_props:m_pelvis_jnt
@@ -3118,17 +3117,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_mugStrap02_jnt
       parentName: beryl_rig_no_props:m_mugStrap01_jnt
-      position: {x: -0.05310916, y: -2.842171e-16, z: 0}
+      position: {x: -0.05310916, y: -1.4210854e-16, z: 1.4210854e-16}
       rotation: {x: -0.07203648, y: -0.017218975, z: 0.0549335, w: 0.9957392}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_mugStrap03_jnt
       parentName: beryl_rig_no_props:m_mugStrap02_jnt
-      position: {x: -0.05831225, y: 2.842171e-16, z: 0}
+      position: {x: -0.05831225, y: 1.4210854e-16, z: 0}
       rotation: {x: 0.09045969, y: 0.020039158, z: -0.038314052, w: 0.9949611}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_mugStrap04_jnt
       parentName: beryl_rig_no_props:m_mugStrap03_jnt
-      position: {x: -0.04298136, y: 0, z: -2.842171e-16}
+      position: {x: -0.04298136, y: 1.4210854e-16, z: -2.842171e-16}
       rotation: {x: 0.009242737, y: 0.0025961313, z: -0.017331716, w: 0.9998037}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_mugStrap05_end
@@ -3148,7 +3147,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backBagFlap_jnt
       parentName: beryl_rig_no_props:m_pelvis_jnt
-      position: {x: -0.14821932, y: 0.10962007, z: -0.08808618}
+      position: {x: -0.1482193, y: 0.10962007, z: -0.08808618}
       rotation: {x: 0.044260494, y: 0.25357422, z: 0.28724435, w: 0.92262226}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_waist_attach_point_grp
@@ -3168,7 +3167,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtB_01_jnt
       parentName: beryl_rig_no_props:l_skirtB_00_jnt
-      position: {x: -0.0942405, y: -4.2632563e-16, z: -7.105427e-17}
+      position: {x: -0.0942405, y: -3.1974422e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtB_02_jnt
@@ -3178,12 +3177,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtB_03_jnt
       parentName: beryl_rig_no_props:l_skirtB_02_jnt
-      position: {x: -0.120443255, y: 1.9539925e-16, z: 7.105427e-17}
+      position: {x: -0.120443255, y: 1.4210854e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtB_04_jnt
       parentName: beryl_rig_no_props:l_skirtB_03_jnt
-      position: {x: -0.13984646, y: 1.0658141e-16, z: 1.4210854e-16}
+      position: {x: -0.13984646, y: 1.7763568e-17, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtB_05_end
@@ -3198,22 +3197,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtA_01_jnt
       parentName: beryl_rig_no_props:l_skirtA_00_jnt
-      position: {x: -0.06984183, y: -2.4868996e-16, z: -1.3322676e-17}
+      position: {x: -0.06984183, y: -7.105427e-17, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtA_02_jnt
       parentName: beryl_rig_no_props:l_skirtA_01_jnt
-      position: {x: -0.11516872, y: 4.2632563e-16, z: 1.9428903e-16}
+      position: {x: -0.11516872, y: 2.1316282e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtA_03_jnt
       parentName: beryl_rig_no_props:l_skirtA_02_jnt
-      position: {x: -0.11725777, y: 2.4868996e-16, z: 8.548717e-17}
+      position: {x: -0.11725777, y: 3.5527135e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtA_04_jnt
       parentName: beryl_rig_no_props:l_skirtA_03_jnt
-      position: {x: -0.103264175, y: 1.4210854e-16, z: 2.997602e-17}
+      position: {x: -0.103264175, y: 7.105427e-17, z: -7.105427e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtA_05_end
@@ -3228,22 +3227,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtC_01_jnt
       parentName: beryl_rig_no_props:l_skirtC_00_jnt
-      position: {x: -0.0942405, y: -1.9539925e-16, z: -1.4210854e-16}
+      position: {x: -0.0942405, y: -2.842171e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtC_02_jnt
       parentName: beryl_rig_no_props:l_skirtC_01_jnt
-      position: {x: -0.12630534, y: -3.5527136e-17, z: 2.842171e-16}
+      position: {x: -0.12630534, y: 0, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtC_03_jnt
       parentName: beryl_rig_no_props:l_skirtC_02_jnt
-      position: {x: -0.13368341, y: -2.4868996e-16, z: 1.4210854e-16}
+      position: {x: -0.13368341, y: -2.1316282e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtC_04_jnt
       parentName: beryl_rig_no_props:l_skirtC_03_jnt
-      position: {x: -0.16177097, y: 1.2434498e-16, z: -4.2632563e-16}
+      position: {x: -0.16177097, y: 3.5527135e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_skirtC_05_end
@@ -3253,27 +3252,27 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_skirtD_00_jnt
       parentName: beryl_rig_no_props:m_pelvis_jnt
-      position: {x: 1.4210854e-16, y: 0.09693936, z: -0.13728139}
+      position: {x: -1.4210854e-16, y: 0.09693936, z: -0.13728139}
       rotation: {x: -0.44046998, y: -0.54818285, z: 0.44963542, w: 0.55073565}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_skirtD_01_jnt
       parentName: beryl_rig_no_props:m_skirtD_00_jnt
-      position: {x: -0.0942405, y: -1.4210854e-16, z: 2.842171e-16}
+      position: {x: -0.0942405, y: -1.4210854e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_skirtD_02_jnt
       parentName: beryl_rig_no_props:m_skirtD_01_jnt
-      position: {x: -0.12630534, y: 1.4210854e-16, z: 0}
+      position: {x: -0.12630534, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_skirtD_03_jnt
       parentName: beryl_rig_no_props:m_skirtD_02_jnt
-      position: {x: -0.13368341, y: -1.7763567e-16, z: 1.4210854e-16}
+      position: {x: -0.13368341, y: -2.842171e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_skirtD_04_jnt
       parentName: beryl_rig_no_props:m_skirtD_03_jnt
-      position: {x: -0.16177097, y: 4.6185276e-16, z: -1.4210854e-16}
+      position: {x: -0.16177097, y: 8.5265126e-16, z: -2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_skirtD_05_end
@@ -3289,22 +3288,22 @@ ModelImporter:
     - name: beryl_rig_no_props:r_skirtB_01_jnt
       parentName: beryl_rig_no_props:r_skirtB_00_jnt
       position: {x: 0.09423976, y: -0.00000028002404, z: -0.00000013246675}
-      rotation: {x: -3.597e-41, y: 5.551115e-17, z: 5.551115e-17, w: 1}
+      rotation: {x: -8.992e-42, y: 2.7755576e-17, z: 2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtB_02_jnt
       parentName: beryl_rig_no_props:r_skirtB_01_jnt
       position: {x: 0.117225476, y: -0.00000008908388, z: 0.00000018361902}
-      rotation: {x: -3.597e-41, y: 5.551115e-17, z: 5.551115e-17, w: 1}
+      rotation: {x: -8.992e-42, y: 2.7755576e-17, z: 2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtB_03_jnt
       parentName: beryl_rig_no_props:r_skirtB_02_jnt
       position: {x: 0.120442905, y: 0.00000040635646, z: -0.0000001387972}
-      rotation: {x: -3.597e-41, y: 5.551115e-17, z: 5.551115e-17, w: 1}
+      rotation: {x: -8.992e-42, y: 2.7755576e-17, z: 2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtB_04_jnt
       parentName: beryl_rig_no_props:r_skirtB_03_jnt
       position: {x: 0.13984707, y: -0.00000011578587, z: 0.00000027184825}
-      rotation: {x: -3.597e-41, y: 5.551115e-17, z: 5.551115e-17, w: 1}
+      rotation: {x: -8.992e-42, y: 2.7755576e-17, z: 2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtB_05_end
       parentName: beryl_rig_no_props:r_skirtB_04_jnt
@@ -3319,22 +3318,22 @@ ModelImporter:
     - name: beryl_rig_no_props:r_skirtA_01_jnt
       parentName: beryl_rig_no_props:r_skirtA_00_jnt
       position: {x: 0.06984196, y: 0.00000001678126, z: 0.000000026017519}
-      rotation: {x: 2.4212e-41, y: 5.2041704e-18, z: -6.461845e-17, w: 1}
+      rotation: {x: -2.7755576e-17, y: 2.076e-41, z: -6.407635e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtA_02_jnt
       parentName: beryl_rig_no_props:r_skirtA_01_jnt
-      position: {x: 0.11516792, y: 0.000000051694215, z: -0.000000011882148}
-      rotation: {x: 2.4212e-41, y: 5.2041704e-18, z: -6.461845e-17, w: 1}
+      position: {x: 0.11516792, y: 0.000000051694208, z: -0.000000011882148}
+      rotation: {x: -2.7755576e-17, y: 2.076e-41, z: -6.407635e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtA_03_jnt
       parentName: beryl_rig_no_props:r_skirtA_02_jnt
       position: {x: 0.11725855, y: -0.0000006256567, z: -0.00000006341112}
-      rotation: {x: 2.4212e-41, y: 5.2041704e-18, z: -6.461845e-17, w: 1}
+      rotation: {x: -2.7755576e-17, y: 2.076e-41, z: -6.407635e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtA_04_jnt
       parentName: beryl_rig_no_props:r_skirtA_03_jnt
       position: {x: 0.10326386, y: 0.00000052010176, z: 0.000000053305055}
-      rotation: {x: 2.4212e-41, y: 5.2041704e-18, z: -6.461845e-17, w: 1}
+      rotation: {x: -2.7755576e-17, y: 2.076e-41, z: -6.407635e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtA_05_end
       parentName: beryl_rig_no_props:r_skirtA_04_jnt
@@ -3349,22 +3348,22 @@ ModelImporter:
     - name: beryl_rig_no_props:r_skirtC_01_jnt
       parentName: beryl_rig_no_props:r_skirtC_00_jnt
       position: {x: 0.09424003, y: -0.00000030935996, z: -0.00000019851963}
-      rotation: {x: 1.6653345e-16, y: 1.110223e-16, z: -2.7755578e-16, w: 1}
+      rotation: {x: 5.551115e-17, y: 1.2490008e-16, z: -2.7755578e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtC_02_jnt
       parentName: beryl_rig_no_props:r_skirtC_01_jnt
       position: {x: 0.12630546, y: 0.0000004123718, z: 0.0000005307054}
-      rotation: {x: 1.6653345e-16, y: 1.110223e-16, z: -2.7755578e-16, w: 1}
+      rotation: {x: 5.551115e-17, y: 1.2490008e-16, z: -2.7755578e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtC_03_jnt
       parentName: beryl_rig_no_props:r_skirtC_02_jnt
       position: {x: 0.13368347, y: -0.0000010469154, z: -0.00000044670645}
-      rotation: {x: 1.6653345e-16, y: 1.110223e-16, z: -2.7755578e-16, w: 1}
+      rotation: {x: 5.551115e-17, y: 1.2490008e-16, z: -2.7755578e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtC_04_jnt
       parentName: beryl_rig_no_props:r_skirtC_03_jnt
-      position: {x: 0.16177109, y: 0.0000006866002, z: -0.00000000200789}
-      rotation: {x: 1.6653345e-16, y: 1.110223e-16, z: -2.7755578e-16, w: 1}
+      position: {x: 0.16177109, y: 0.0000006866002, z: -0.0000000020078905}
+      rotation: {x: 5.551115e-17, y: 1.2490008e-16, z: -2.7755578e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_skirtC_05_end
       parentName: beryl_rig_no_props:r_skirtC_04_jnt
@@ -3373,33 +3372,33 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spine_00_jnt
       parentName: beryl_rig_no_props:m_pelvis_jnt
-      position: {x: 0.0003108437, y: 0.0995822, z: 0.000867924}
-      rotation: {x: 0.009255934, y: 0.0005206425, z: 0.0036902968, w: 0.99995023}
+      position: {x: -0.000019803365, y: 0.09959076, z: 0.00048054065}
+      rotation: {x: -0.012427851, y: -0.00000010181892, z: 1.5835079e-10, w: 0.9999228}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spine_01_jnt
       parentName: beryl_rig_no_props:m_spine_00_jnt
-      position: {x: -0.00022600614, y: 0.102076985, z: -0.001469623}
-      rotation: {x: -0.015885292, y: 0.0013985634, z: 0.002814093, w: 0.9998689}
+      position: {x: -5.949566e-10, y: 0.10214012, z: -0.00040862977}
+      rotation: {x: -0.0048931655, y: 0.000000055532126, z: 0.000000002589856, w: 0.999988}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_spine_02_jnt
       parentName: beryl_rig_no_props:m_spine_01_jnt
-      position: {x: -0.0004673978, y: 0.09067687, z: -0.00030934805}
-      rotation: {x: 0.0065570483, y: 0.0035729518, z: 0.0050968933, w: 0.9999592}
+      position: {x: -6.009114e-10, y: 0.090723455, z: -0.00059888215}
+      rotation: {x: -0.0055646533, y: 0.00000006150893, z: 0.0000000031544973, w: 0.9999845}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_neck_jnt
       parentName: beryl_rig_no_props:m_spine_02_jnt
-      position: {x: -0.00060629484, y: 0.16139612, z: -0.01764555}
-      rotation: {x: -0.0044036703, y: 0.009060755, z: -0.0020907172, w: 0.9999471}
+      position: {x: -2.2673262e-10, y: 0.16083816, z: -0.022077037}
+      rotation: {x: -0.0004353511, y: -0.000000015351256, z: -6.683186e-12, w: 0.99999994}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_neck_00_jnt
       parentName: beryl_rig_no_props:m_neck_jnt
-      position: {x: -0, y: 0.06935119, z: 8.881784e-18}
-      rotation: {x: 0.01380106, y: 0.0052516586, z: -0.002830086, w: 0.999887}
+      position: {x: -3.900304e-10, y: 0.06935119, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_head_jnt
       parentName: beryl_rig_no_props:m_neck_00_jnt
-      position: {x: -0, y: 0.07483105, z: 4.440892e-18}
-      rotation: {x: 0.06791668, y: -0.020401817, z: 0.008583417, w: 0.99744546}
+      position: {x: -4.2084947e-10, y: 0.07483105, z: 7.105427e-17}
+      rotation: {x: 0.022046167, y: 0.05925424, z: -0.019473175, w: 0.99780947}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_head_end
       parentName: beryl_rig_no_props:m_head_jnt
@@ -3424,12 +3423,12 @@ ModelImporter:
     - name: beryl_rig_no_props:r_ear_01_jnt
       parentName: beryl_rig_no_props:r_ear_00_jnt
       position: {x: 0.041884575, y: -0.0000033097806, z: 0.0000004935877}
-      rotation: {x: 1.07908e-40, y: 5.551115e-17, z: -1.6653345e-16, w: 1}
+      rotation: {x: 5.551115e-17, y: -1.7984e-41, z: -2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ear_02_jnt
       parentName: beryl_rig_no_props:r_ear_01_jnt
       position: {x: 0.035895087, y: 0.0000037506024, z: -0.0000007669714}
-      rotation: {x: 1.07908e-40, y: 5.551115e-17, z: -1.6653345e-16, w: 1}
+      rotation: {x: 5.551115e-17, y: -1.7984e-41, z: -2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ear_03_end
       parentName: beryl_rig_no_props:r_ear_02_jnt
@@ -3443,12 +3442,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ear_01_jnt
       parentName: beryl_rig_no_props:l_ear_00_jnt
-      position: {x: -0.041882608, y: 0, z: 2.842171e-16}
+      position: {x: -0.041882608, y: -1.4210854e-16, z: 4.2632563e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ear_02_jnt
       parentName: beryl_rig_no_props:l_ear_01_jnt
-      position: {x: -0.03589699, y: 5.684342e-16, z: -4.2632563e-16}
+      position: {x: -0.03589699, y: 1.1368684e-15, z: -4.2632563e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ear_03_end
@@ -3463,12 +3462,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairStrandA02_jnt
       parentName: beryl_rig_no_props:l_hairStrandA01_jnt
-      position: {x: -0.03392891, y: -1.4210854e-16, z: 5.3290704e-17}
+      position: {x: -0.03392891, y: -1.4210854e-16, z: 7.105427e-17}
       rotation: {x: 0.012398366, y: 0.13230117, z: 0.27933997, w: 0.9509531}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairStrandA03_jnt
       parentName: beryl_rig_no_props:l_hairStrandA02_jnt
-      position: {x: -0.041562304, y: 2.842171e-16, z: -7.105427e-17}
+      position: {x: -0.041562304, y: 0, z: -4.4408918e-17}
       rotation: {x: 0.036007285, y: -0.21376818, z: -0.40741912, w: 0.8871394}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairStrandA04_end
@@ -3483,22 +3482,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandA02_jnt
       parentName: beryl_rig_no_props:m_hairStrandA01_jnt
-      position: {x: -0.031704143, y: -2.842171e-16, z: 1.4210854e-16}
+      position: {x: -0.031704143, y: 0, z: 1.4210854e-16}
       rotation: {x: -0.027989328, y: -0.018133396, z: 0.2397404, w: 0.9702641}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandA03_jnt
       parentName: beryl_rig_no_props:m_hairStrandA02_jnt
-      position: {x: -0.03320454, y: -2.842171e-16, z: 1.4210854e-16}
+      position: {x: -0.03320454, y: -4.2632563e-16, z: -1.4210854e-16}
       rotation: {x: 0.016978545, y: -0.15002145, z: 0.28443953, w: 0.946731}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandA04_jnt
       parentName: beryl_rig_no_props:m_hairStrandA03_jnt
-      position: {x: -0.041307025, y: 7.105427e-16, z: -5.684342e-16}
+      position: {x: -0.041307025, y: 8.704148e-16, z: -4.2632563e-16}
       rotation: {x: 0.18575923, y: -0.25927067, z: 0.33865908, w: 0.8852018}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandA05_jnt
       parentName: beryl_rig_no_props:m_hairStrandA04_jnt
-      position: {x: -0.040071715, y: 0, z: 3.1974422e-16}
+      position: {x: -0.040071715, y: 1.4210854e-16, z: 3.7303492e-16}
       rotation: {x: 0.3628272, y: 0.12471301, z: 0.50046176, w: 0.7761064}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandA06_end
@@ -3513,17 +3512,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandB02_jnt
       parentName: beryl_rig_no_props:m_hairStrandB01_jnt
-      position: {x: -0.05414106, y: -8.5265126e-16, z: 0}
+      position: {x: -0.05414106, y: -2.842171e-16, z: 0}
       rotation: {x: -0.19139345, y: 0.040879354, z: 0.3835578, w: 0.90254134}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandB03_jnt
       parentName: beryl_rig_no_props:m_hairStrandB02_jnt
-      position: {x: -0.055818666, y: 4.2632563e-16, z: 2.842171e-16}
+      position: {x: -0.055818666, y: 2.842171e-16, z: 0}
       rotation: {x: -0.041405197, y: -0.36055088, z: 0.39633143, w: 0.8433327}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandB04_jnt
       parentName: beryl_rig_no_props:m_hairStrandB03_jnt
-      position: {x: -0.06558126, y: -1.7763567e-16, z: -1.4210854e-16}
+      position: {x: -0.06558126, y: -3.5527135e-16, z: 0}
       rotation: {x: 0.0067003886, y: 0.14331053, z: 0.042608224, w: 0.98873746}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandB05_end
@@ -3538,17 +3537,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandC02_jnt
       parentName: beryl_rig_no_props:m_hairStrandC01_jnt
-      position: {x: -0.047878075, y: -1.4210854e-16, z: 0}
+      position: {x: -0.047878075, y: 0, z: -1.4210854e-16}
       rotation: {x: -0.02115225, y: 0.13701932, z: 0.08469793, w: 0.98671407}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandC03_jnt
       parentName: beryl_rig_no_props:m_hairStrandC02_jnt
-      position: {x: -0.037759185, y: 2.1316282e-16, z: 0}
+      position: {x: -0.037759185, y: -3.1974422e-16, z: -2.842171e-16}
       rotation: {x: -0.040733695, y: -0.011229073, z: 0.10458231, w: 0.99361825}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandC04_jnt
       parentName: beryl_rig_no_props:m_hairStrandC03_jnt
-      position: {x: -0.040141977, y: 1.0658141e-16, z: 2.842171e-16}
+      position: {x: -0.040141977, y: 2.3092638e-16, z: 2.842171e-16}
       rotation: {x: -0.00014056156, y: -0.3484992, z: 0.12697062, w: 0.92866933}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandC05_end
@@ -3563,22 +3562,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandD02_jnt
       parentName: beryl_rig_no_props:m_hairStrandD01_jnt
-      position: {x: -0.06080389, y: 7.105427e-17, z: 0}
+      position: {x: -0.06080389, y: 1.5987211e-16, z: -2.842171e-16}
       rotation: {x: -0.25086555, y: -0.09454068, z: 0.112617776, w: 0.9567893}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandD03_jnt
       parentName: beryl_rig_no_props:m_hairStrandD02_jnt
-      position: {x: -0.078595124, y: -1.0658141e-16, z: 2.842171e-16}
+      position: {x: -0.078595124, y: -3.5527135e-16, z: 5.684342e-16}
       rotation: {x: 0.09362523, y: 0.2981603, z: 0.0662648, w: 0.94759893}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandD05_jnt
       parentName: beryl_rig_no_props:m_hairStrandD03_jnt
-      position: {x: -0.048790872, y: 3.7303492e-16, z: -5.684342e-16}
+      position: {x: -0.048790872, y: 2.842171e-16, z: -4.2632563e-16}
       rotation: {x: -0.031680252, y: 0.71470326, z: 0.09831246, w: 0.6917589}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairStrandD06_end
       parentName: beryl_rig_no_props:m_hairStrandD05_jnt
-      position: {x: -0.05857672, y: -4.973799e-16, z: 1.4210854e-15}
+      position: {x: -0.05857672, y: -7.4606985e-16, z: 1.4210854e-15}
       rotation: {x: -0.17206433, y: 0, z: -0, w: 0.9850857}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairLaceTop01_jnt
@@ -3588,12 +3587,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairLaceTop02_jnt
       parentName: beryl_rig_no_props:l_hairLaceTop01_jnt
-      position: {x: -0.041925296, y: -1.4210854e-16, z: 0}
+      position: {x: -0.041925296, y: 0, z: 1.4210854e-16}
       rotation: {x: -0.02077468, y: 0.06491988, z: -0.18895157, w: 0.97961783}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairLaceTop03_jnt
       parentName: beryl_rig_no_props:l_hairLaceTop02_jnt
-      position: {x: -0.044398323, y: -4.2632563e-16, z: -4.2632563e-16}
+      position: {x: -0.044398323, y: -5.684342e-16, z: -6.3948843e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairLaceBot01_jnt
@@ -3603,12 +3602,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairLaceBot02_jnt
       parentName: beryl_rig_no_props:l_hairLaceBot01_jnt
-      position: {x: -0.047449455, y: 0, z: 1.4210854e-16}
+      position: {x: -0.047449455, y: -1.4210854e-16, z: 0}
       rotation: {x: -0.007507693, y: -0.004041242, z: 0.14551742, w: 0.98931897}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hairLaceBot03_jnt
       parentName: beryl_rig_no_props:l_hairLaceBot02_jnt
-      position: {x: -0.05239019, y: 1.0658141e-16, z: -1.4210854e-16}
+      position: {x: -0.05239019, y: 1.0658141e-16, z: 2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_01_jnt
@@ -3618,27 +3617,27 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_02_jnt
       parentName: beryl_rig_no_props:m_backHairStrandA_01_jnt
-      position: {x: -0.084305555, y: -1.2878587e-16, z: -2.1316282e-16}
+      position: {x: -0.084305555, y: -1.0658141e-16, z: -1.7763567e-16}
       rotation: {x: 0.059165128, y: 0.1604249, z: -0.15584859, w: 0.9728693}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_03_jnt
       parentName: beryl_rig_no_props:m_backHairStrandA_02_jnt
-      position: {x: -0.09696308, y: 6.3948843e-16, z: 4.2632563e-16}
+      position: {x: -0.09696308, y: 4.2632563e-16, z: -1.4210854e-16}
       rotation: {x: 0.011785332, y: 0.25720412, z: -0.16914228, w: 0.9513664}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_04_jnt
       parentName: beryl_rig_no_props:m_backHairStrandA_03_jnt
-      position: {x: -0.09498245, y: 0, z: 8.5265126e-16}
+      position: {x: -0.09498245, y: 2.842171e-16, z: 7.105427e-16}
       rotation: {x: -0.13742214, y: 0.4520127, z: -0.123637676, w: 0.87264735}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_05_jnt
       parentName: beryl_rig_no_props:m_backHairStrandA_04_jnt
-      position: {x: -0.1304146, y: 3.5527135e-16, z: 2.842171e-16}
+      position: {x: -0.1304146, y: 2.842171e-16, z: -2.842171e-16}
       rotation: {x: -0.0777599, y: 0.1612386, z: -0.013254327, w: 0.98375803}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_06_jnt
       parentName: beryl_rig_no_props:m_backHairStrandA_05_jnt
-      position: {x: -0.10253492, y: 4.2632563e-16, z: -1.1368684e-15}
+      position: {x: -0.10253492, y: 2.1316282e-16, z: 0}
       rotation: {x: -0.08815829, y: 0.18006127, z: 0.007384956, w: 0.9796691}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandA_07_jnt
@@ -3658,22 +3657,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandB_03_jnt
       parentName: beryl_rig_no_props:m_backHairStrandB_02_jnt
-      position: {x: -0.07963865, y: 0, z: 0}
+      position: {x: -0.07963865, y: -5.684342e-16, z: -4.2632563e-16}
       rotation: {x: 0.0062557016, y: -0.014508834, z: 0.18639714, w: 0.9823474}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandB_04_jnt
       parentName: beryl_rig_no_props:m_backHairStrandB_03_jnt
-      position: {x: -0.09745901, y: 2.842171e-16, z: -2.842171e-16}
+      position: {x: -0.09745901, y: 2.842171e-16, z: 0}
       rotation: {x: 0.0002095077, y: 0.0018659019, z: 0.32534528, w: 0.9455934}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandB_05_jnt
       parentName: beryl_rig_no_props:m_backHairStrandB_04_jnt
-      position: {x: -0.07647131, y: 0, z: 0}
+      position: {x: -0.07647131, y: 2.842171e-16, z: 1.4210854e-16}
       rotation: {x: 0.013558377, y: 0.01363145, z: 0.33297226, w: 0.9427406}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandB_06_jnt
       parentName: beryl_rig_no_props:m_backHairStrandB_05_jnt
-      position: {x: -0.05165986, y: 2.842171e-16, z: 1.4210854e-16}
+      position: {x: -0.05165986, y: -7.105427e-17, z: 2.842171e-16}
       rotation: {x: 0.9323088, y: 0.32703993, z: 0.017134873, w: 0.15346546}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandB_07_jnt
@@ -3688,32 +3687,32 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandC_02_jnt
       parentName: beryl_rig_no_props:m_backHairStrandC_01_jnt
-      position: {x: -0.10765778, y: 8.5265126e-16, z: -7.105427e-17}
+      position: {x: -0.10765778, y: 8.5265126e-16, z: 0}
       rotation: {x: 0.056420386, y: -0.1359637, z: 0.14602996, w: 0.9782668}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandC_03_jnt
       parentName: beryl_rig_no_props:m_backHairStrandC_02_jnt
-      position: {x: -0.054636974, y: 5.684342e-16, z: -7.105427e-17}
+      position: {x: -0.054636974, y: 0, z: -1.4210854e-16}
       rotation: {x: 0.0025693525, y: -0.036363717, z: 0.17362018, w: 0.9841378}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandC_04_jnt
       parentName: beryl_rig_no_props:m_backHairStrandC_03_jnt
-      position: {x: -0.058179066, y: 5.684342e-16, z: 0}
+      position: {x: -0.058179066, y: 1.4210854e-15, z: 1.4210854e-16}
       rotation: {x: -0.0520748, y: -0.16554087, z: 0.19632182, w: 0.9650607}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandC_05_jnt
       parentName: beryl_rig_no_props:m_backHairStrandC_04_jnt
-      position: {x: -0.05316794, y: 8.5265126e-16, z: 0}
+      position: {x: -0.05316794, y: 2.842171e-16, z: -1.4210854e-16}
       rotation: {x: -0.28005284, y: -0.33463508, z: 0.17114015, w: 0.8833464}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandC_06_jnt
       parentName: beryl_rig_no_props:m_backHairStrandC_05_jnt
-      position: {x: -0.050006893, y: 2.842171e-16, z: -1.4210854e-16}
+      position: {x: -0.050006893, y: 2.842171e-16, z: 0}
       rotation: {x: -0.24972309, y: -0.24613613, z: -0.089367874, w: 0.93223864}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandC_07_jnt
       parentName: beryl_rig_no_props:m_backHairStrandC_06_jnt
-      position: {x: -0.053811196, y: -2.5579537e-15, z: -8.704148e-16}
+      position: {x: -0.053811196, y: -1.9895197e-15, z: -1.2079227e-15}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandD_01_jnt
@@ -3723,12 +3722,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandD_02_jnt
       parentName: beryl_rig_no_props:m_backHairStrandD_01_jnt
-      position: {x: -0.05790307, y: 2.842171e-16, z: 0}
+      position: {x: -0.05790307, y: 2.842171e-16, z: -1.4210854e-16}
       rotation: {x: 0.04149494, y: -0.045726065, z: -0.2897525, w: 0.95510775}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_backHairStrandD_03_jnt
       parentName: beryl_rig_no_props:m_backHairStrandD_02_jnt
-      position: {x: -0.03732156, y: -5.684342e-16, z: 0}
+      position: {x: -0.03732156, y: -7.81597e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0.31644845, w: 0.9486097}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_01_jnt
@@ -3738,32 +3737,32 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_02_jnt
       parentName: beryl_rig_no_props:m_hairMain_01_jnt
-      position: {x: -0.0926102, y: 4.2632563e-16, z: 2.1316282e-16}
+      position: {x: -0.0926102, y: 5.684342e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: 0, z: 0.18619342, w: 0.9825131}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_03_jnt
       parentName: beryl_rig_no_props:m_hairMain_02_jnt
-      position: {x: -0.07984042, y: 8.5265126e-16, z: -2.1316282e-16}
+      position: {x: -0.07984042, y: 5.684342e-16, z: -2.842171e-16}
       rotation: {x: 0, y: 0, z: 0.54827476, w: 0.8362983}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_04_jnt
       parentName: beryl_rig_no_props:m_hairMain_03_jnt
-      position: {x: -0.06961732, y: 5.684342e-16, z: 2.842171e-16}
+      position: {x: -0.06961732, y: 2.842171e-16, z: 4.2632563e-16}
       rotation: {x: 0, y: 0, z: 0.111919716, w: 0.99371725}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_05_jnt
       parentName: beryl_rig_no_props:m_hairMain_04_jnt
-      position: {x: -0.059858296, y: -5.684342e-16, z: -2.842171e-16}
+      position: {x: -0.059858296, y: -5.684342e-16, z: 0}
       rotation: {x: 0, y: 0, z: 0.28795862, w: 0.95764285}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_06_jnt
       parentName: beryl_rig_no_props:m_hairMain_05_jnt
-      position: {x: -0.070872255, y: 7.105427e-17, z: 2.842171e-16}
+      position: {x: -0.070872255, y: 2.842171e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: 0, z: 0.081291914, w: 0.99669033}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_hairMain_07_jnt
       parentName: beryl_rig_no_props:m_hairMain_06_jnt
-      position: {x: -0.067497425, y: 3.1974422e-16, z: 0}
+      position: {x: -0.067497425, y: 2.842171e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_frontGroupedHair01_jnt
@@ -3773,38 +3772,38 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_frontGroupedHair02_jnt
       parentName: beryl_rig_no_props:m_frontGroupedHair01_jnt
-      position: {x: -0.07077718, y: 2.842171e-16, z: -4.4408918e-17}
+      position: {x: -0.07077718, y: 5.684342e-16, z: 3.5527136e-17}
       rotation: {x: 0, y: -0, z: -0.17000683, w: 0.98544294}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_frontGroupedHair03_jnt
       parentName: beryl_rig_no_props:m_frontGroupedHair02_jnt
-      position: {x: -0.0646755, y: 0, z: -2.0428103e-16}
+      position: {x: -0.0646755, y: -4.2632563e-16, z: -2.4868996e-16}
       rotation: {x: 0, y: -0, z: -0.08546596, w: 0.9963411}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:m_frontGroupedHair04_jnt
       parentName: beryl_rig_no_props:m_frontGroupedHair03_jnt
-      position: {x: -0.058626484, y: 1.4210854e-16, z: 2.0428103e-16}
+      position: {x: -0.058626484, y: 0, z: 1.7763567e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_clavicle_jnt
       parentName: beryl_rig_no_props:m_spine_02_jnt
-      position: {x: -0.041999348, y: 0.1203466, z: 0.043700285}
-      rotation: {x: -0.04940334, y: 0.15007429, z: -0.0993317, w: 0.9824308}
+      position: {x: -0.041741513, y: 0.12167363, z: 0.04025711}
+      rotation: {x: 0.015256692, y: 0.16754022, z: -0.09102088, w: 0.981536}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_upperarm_jnt
       parentName: beryl_rig_no_props:l_clavicle_jnt
       position: {x: -0.14955099, y: -0.059009068, z: -0.10869408}
-      rotation: {x: 0.27486506, y: -0.12543552, z: 0.15808111, w: 0.94006675}
+      rotation: {x: -0.005004507, y: -0.1533412, z: 0.10931432, w: 0.98209566}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_lowerarm_jnt
       parentName: beryl_rig_no_props:l_upperarm_jnt
-      position: {x: -0.2513617, y: 2.842171e-16, z: 1.0658141e-16}
-      rotation: {x: -0.0074071866, y: 0.015163738, z: -0.017676923, w: 0.9997014}
+      position: {x: -0.2513617, y: 3.5527135e-16, z: 1.7763567e-16}
+      rotation: {x: -0.007609738, y: 0.00767715, z: -0.011224698, w: 0.9998786}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hand_jnt
       parentName: beryl_rig_no_props:l_lowerarm_jnt
-      position: {x: -0.22891177, y: -7.105427e-16, z: 3.5527135e-16}
-      rotation: {x: -0.034579713, y: -0.05662278, z: 0.16133782, w: 0.9846666}
+      position: {x: -0.22891177, y: -1.1368684e-15, z: 0}
+      rotation: {x: 0.18853728, y: -0.22968495, z: 0.17748402, w: 0.9381887}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_hand_attach_point_grp
       parentName: beryl_rig_no_props:l_hand_jnt
@@ -3819,21 +3818,21 @@ ModelImporter:
     - name: beryl_rig_no_props:l_index_meta_jnt
       parentName: beryl_rig_no_props:l_hand_jnt
       position: {x: -0.031094782, y: 0.013177433, z: 0.03477065}
-      rotation: {x: 0.040325113, y: 0.094392195, z: -0.18524571, w: 0.97731674}
+      rotation: {x: 0.04032537, y: 0.094392285, z: -0.18524379, w: 0.97731715}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_index_00_jnt
       parentName: beryl_rig_no_props:l_index_meta_jnt
-      position: {x: -0.0713201, y: 1.1013412e-15, z: -2.842171e-16}
-      rotation: {x: 0.01838781, y: 0.00030183035, z: 0.038659394, w: 0.9990833}
+      position: {x: -0.0713201, y: 7.9936056e-16, z: 0}
+      rotation: {x: 0.01838787, y: 0.00030193463, z: 0.03865945, w: 0.9990832}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_index_01_jnt
       parentName: beryl_rig_no_props:l_index_00_jnt
-      position: {x: -0.06205264, y: -7.81597e-16, z: 1.4210854e-16}
+      position: {x: -0.06205264, y: -1.7763567e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: 0, z: 0.041843273, w: 0.99912417}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_index_02_jnt
       parentName: beryl_rig_no_props:l_index_01_jnt
-      position: {x: -0.022312226, y: -7.105427e-17, z: 2.1316282e-16}
+      position: {x: -0.022312226, y: -4.6185276e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_index_end
@@ -3844,21 +3843,21 @@ ModelImporter:
     - name: beryl_rig_no_props:l_middle_meta_jnt
       parentName: beryl_rig_no_props:l_hand_jnt
       position: {x: -0.03329909, y: 0.019237528, z: 0.007365153}
-      rotation: {x: -0.038436286, y: 0.07642827, z: -0.18413326, w: 0.9791713}
+      rotation: {x: -0.03843625, y: 0.0764284, z: -0.1841321, w: 0.97917145}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_middle_00_jnt
       parentName: beryl_rig_no_props:l_middle_meta_jnt
-      position: {x: -0.0713201, y: 2.4868996e-16, z: 2.842171e-16}
-      rotation: {x: 0.018420054, y: 0.00018803019, z: 0.03804321, w: 0.99910635}
+      position: {x: -0.0713201, y: 1.4210854e-16, z: 2.842171e-16}
+      rotation: {x: 0.018420113, y: 0.00018849221, z: 0.038043514, w: 0.9991063}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_middle_01_jnt
       parentName: beryl_rig_no_props:l_middle_00_jnt
-      position: {x: -0.06205264, y: 7.105427e-17, z: 1.7763567e-16}
-      rotation: {x: -0.00000006891783, y: -0.000000002662999, z: 0.037626695, w: 0.99929196}
+      position: {x: -0.06205264, y: 1.4210854e-16, z: 0}
+      rotation: {x: 0.0000000055879337, y: -0.0000006446787, z: 0.037625864, w: 0.99929196}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_middle_02_jnt
       parentName: beryl_rig_no_props:l_middle_01_jnt
-      position: {x: -0.030617809, y: 4.2632563e-16, z: 1.0658141e-16}
+      position: {x: -0.030617809, y: 3.5527135e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_middle_end
@@ -3869,21 +3868,21 @@ ModelImporter:
     - name: beryl_rig_no_props:l_ring_meta_jnt
       parentName: beryl_rig_no_props:l_hand_jnt
       position: {x: -0.029301697, y: 0.016667698, z: -0.02147712}
-      rotation: {x: -0.10539266, y: 0.07928171, z: -0.19018282, w: 0.9728501}
+      rotation: {x: -0.105392724, y: 0.079281695, z: -0.19018133, w: 0.9728504}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ring_00_jnt
       parentName: beryl_rig_no_props:l_ring_meta_jnt
-      position: {x: -0.0713201, y: 7.105427e-16, z: 1.687539e-16}
-      rotation: {x: 0.01842009, y: 0.00018763533, z: 0.03804313, w: 0.99910635}
+      position: {x: -0.0713201, y: 3.5527135e-16, z: 1.4210854e-16}
+      rotation: {x: 0.018420018, y: 0.00018718831, z: 0.03804169, w: 0.9991064}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ring_01_jnt
       parentName: beryl_rig_no_props:l_ring_00_jnt
-      position: {x: -0.05533183, y: -3.5527135e-16, z: -5.3290704e-17}
-      rotation: {x: -0.000000014901156, y: 0.0000002608721, z: 0.040469255, w: 0.9991808}
+      position: {x: -0.05533183, y: 7.105427e-17, z: 2.1316282e-16}
+      rotation: {x: -0.000000016763801, y: 0.0000001839798, z: 0.040468097, w: 0.9991809}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ring_02_jnt
       parentName: beryl_rig_no_props:l_ring_01_jnt
-      position: {x: -0.029106252, y: 7.105427e-17, z: -1.7763567e-16}
+      position: {x: -0.029106252, y: -7.105427e-17, z: -4.2632563e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_ring_00_jnt3
@@ -3894,21 +3893,21 @@ ModelImporter:
     - name: beryl_rig_no_props:l_pinky_meta_jnt
       parentName: beryl_rig_no_props:l_hand_jnt
       position: {x: -0.029509794, y: 0.0019525188, z: -0.04515138}
-      rotation: {x: -0.10841135, y: 0.07456739, z: -0.19838323, w: 0.9712522}
+      rotation: {x: -0.10841144, y: 0.0745675, z: -0.19838151, w: 0.97125256}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_pinky_00_jnt
       parentName: beryl_rig_no_props:l_pinky_meta_jnt
-      position: {x: -0.059540484, y: 1.1368684e-15, z: 3.907985e-16}
-      rotation: {x: -0.000000014901156, y: 0.0000002011656, z: 0.038903598, w: 0.999243}
+      position: {x: -0.059540484, y: 1.1368684e-15, z: 4.2632563e-16}
+      rotation: {x: 0.000000029802312, y: -0.00000032037485, z: 0.03890505, w: 0.9992429}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_pinky_01_jnt
       parentName: beryl_rig_no_props:l_pinky_00_jnt
-      position: {x: -0.054312114, y: 1.4210854e-16, z: -8.8817837e-17}
-      rotation: {x: 0.000000032423966, y: -0.00000012098114, z: 0.03771439, w: 0.99928856}
+      position: {x: -0.054312114, y: 2.1316282e-16, z: 7.105427e-17}
+      rotation: {x: 0.00000008662467, y: 0.0000019137733, z: 0.03771349, w: 0.9992887}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_pinky_02_jnt
       parentName: beryl_rig_no_props:l_pinky_01_jnt
-      position: {x: -0.019036995, y: 0, z: -1.7763568e-17}
+      position: {x: -0.019036995, y: -1.4210854e-16, z: 0}
       rotation: {x: 0, y: 0, z: 0.0735578, w: 0.99729097}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_pinky_end
@@ -3919,7 +3918,7 @@ ModelImporter:
     - name: beryl_rig_no_props:l_thumb_meta_jnt
       parentName: beryl_rig_no_props:l_hand_jnt
       position: {x: -0.025781784, y: -0.015737753, z: 0.040947463}
-      rotation: {x: 0.4884959, y: 0.21701585, z: -0.48927718, w: 0.6891181}
+      rotation: {x: 0.45490643, y: 0.1360498, z: -0.54905427, w: 0.6878155}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_thumb_base_jnt
       parentName: beryl_rig_no_props:l_thumb_meta_jnt
@@ -3929,7 +3928,7 @@ ModelImporter:
     - name: beryl_rig_no_props:l_thumb_00_jnt
       parentName: beryl_rig_no_props:l_thumb_base_jnt
       position: {x: -0.051395886, y: -0.00000008948181, z: -0.0000001350871}
-      rotation: {x: -0.014040762, y: -0.0051680184, z: 0.039690655, w: 0.9991}
+      rotation: {x: -0.014040521, y: -0.0051690233, z: 0.03969475, w: 0.99909985}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_thumb_01_jnt
       parentName: beryl_rig_no_props:l_thumb_00_jnt
@@ -3958,23 +3957,23 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_clavicle_jnt
       parentName: beryl_rig_no_props:m_spine_02_jnt
-      position: {x: 0.04152229, y: 0.120610066, z: 0.043400485}
-      rotation: {x: 0.9797064, y: 0.08085591, z: 0.17682117, w: -0.04870392}
+      position: {x: 0.041781172, y: 0.121675365, z: 0.040257145}
+      rotation: {x: 0.98256093, y: 0.08150295, z: 0.16509832, w: -0.025960634}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_upperarm_jnt
       parentName: beryl_rig_no_props:r_clavicle_jnt
-      position: {x: 0.149551, y: 0.059009943, z: 0.108693995}
-      rotation: {x: 0.11930466, y: -0.15288135, z: 0.120261654, w: 0.9736175}
+      position: {x: 0.14955087, y: 0.059010066, z: 0.108693615}
+      rotation: {x: 0.21087255, y: -0.15641247, z: 0.13646463, w: 0.95522004}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_lowerarm_jnt
       parentName: beryl_rig_no_props:r_upperarm_jnt
-      position: {x: 0.2513622, y: 0.00000046023362, z: -0.00000042289912}
-      rotation: {x: -0.0013734542, y: 0.021247348, z: -0.014484103, w: 0.9996684}
+      position: {x: 0.2513621, y: 0.00000045854625, z: -0.00000025774153}
+      rotation: {x: -0.014596203, y: 0.017841782, z: -0.021528462, w: 0.99950254}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_hand_jnt
       parentName: beryl_rig_no_props:r_lowerarm_jnt
-      position: {x: 0.22891168, y: -0.0000003162685, z: 0.00000038007835}
-      rotation: {x: 0.37447676, y: -0.15434763, z: 0.10345095, w: 0.9084283}
+      position: {x: 0.2289117, y: -0.00000034171586, z: 0.00000040000194}
+      rotation: {x: 0.19138297, y: -0.20454007, z: 0.17048062, w: 0.9447075}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_hand_attach_point_grp
       parentName: beryl_rig_no_props:r_hand_jnt
@@ -3989,17 +3988,17 @@ ModelImporter:
     - name: beryl_rig_no_props:r_index_meta_jnt
       parentName: beryl_rig_no_props:r_hand_jnt
       position: {x: 0.031095387, y: -0.013177599, z: -0.0347705}
-      rotation: {x: 0.040325522, y: 0.0943915, z: -0.18524055, w: 0.9773178}
+      rotation: {x: 0.040325183, y: 0.09439052, z: -0.1852421, w: 0.9773176}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_index_00_jnt
       parentName: beryl_rig_no_props:r_index_meta_jnt
-      position: {x: 0.071319416, y: -0.0000006170556, z: -0.0000000062758394}
-      rotation: {x: -0.04024036, y: -0.0027945605, z: 0.03766287, w: 0.998476}
+      position: {x: 0.0713194, y: -0.0000006399895, z: -0.00000006229709}
+      rotation: {x: 0.018385585, y: 0.0003000124, z: 0.03864628, w: 0.9990838}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_index_01_jnt
       parentName: beryl_rig_no_props:r_index_00_jnt
-      position: {x: 0.062053245, y: 0.00000068489766, z: -0.0000003747872}
-      rotation: {x: -0.052823506, y: 0.0149302725, z: -0.0044251545, w: 0.99848247}
+      position: {x: 0.06205325, y: 0.0000006937665, z: -0.00000034297946}
+      rotation: {x: 0, y: -0, z: -8.136313e-10, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_index_02_jnt
       parentName: beryl_rig_no_props:r_index_01_jnt
@@ -4014,17 +4013,17 @@ ModelImporter:
     - name: beryl_rig_no_props:r_middle_meta_jnt
       parentName: beryl_rig_no_props:r_hand_jnt
       position: {x: 0.03329925, y: -0.019237772, z: -0.007365057}
-      rotation: {x: -0.03843635, y: 0.076427996, z: -0.18413411, w: 0.9791711}
+      rotation: {x: -0.038436495, y: 0.07642766, z: -0.18413651, w: 0.97917074}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_middle_00_jnt
       parentName: beryl_rig_no_props:r_middle_meta_jnt
-      position: {x: 0.07132015, y: 0.00000018871884, z: -0.000000007175967}
-      rotation: {x: -0.043640785, y: -0.0015680257, z: 0.03925317, w: 0.9982746}
+      position: {x: 0.071320154, y: 0.000000187094, z: -0.000000016851274}
+      rotation: {x: 0.018417465, y: 0.00018698713, z: 0.038041886, w: 0.99910647}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_middle_01_jnt
       parentName: beryl_rig_no_props:r_middle_00_jnt
-      position: {x: 0.062052596, y: 0.00000034318217, z: -0.0000001933311}
-      rotation: {x: -0.051759906, y: 0.0014801642, z: -0.08242196, w: 0.9952514}
+      position: {x: 0.062052596, y: 0.00000035553253, z: -0.00000016217167}
+      rotation: {x: -0.0000005085018, y: 0.000005144957, z: -0.08175996, w: 0.99665207}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_middle_02_jnt
       parentName: beryl_rig_no_props:r_middle_01_jnt
@@ -4039,17 +4038,17 @@ ModelImporter:
     - name: beryl_rig_no_props:r_ring_meta_jnt
       parentName: beryl_rig_no_props:r_hand_jnt
       position: {x: 0.029301388, y: -0.016667357, z: 0.021476917}
-      rotation: {x: -0.10539162, y: 0.079280965, z: -0.19017954, w: 0.972851}
+      rotation: {x: -0.10539151, y: 0.079280704, z: -0.19018152, w: 0.97285056}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ring_00_jnt
       parentName: beryl_rig_no_props:r_ring_meta_jnt
-      position: {x: 0.07132042, y: -0.00000054671216, z: 0.00000014439976}
-      rotation: {x: -0.013950919, y: -0.0034956832, z: 0.039539617, w: 0.9991145}
+      position: {x: 0.071320444, y: -0.0000005607134, z: 0.00000012284008}
+      rotation: {x: 0.018417746, y: 0.00018681579, z: 0.038033202, w: 0.9991067}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ring_01_jnt
       parentName: beryl_rig_no_props:r_ring_00_jnt
-      position: {x: 0.055331606, y: 0.0000005420638, z: -0.00000010780329}
-      rotation: {x: -0.05037243, y: 0.012156127, z: -0.025973508, w: 0.99831873}
+      position: {x: 0.05533161, y: 0.00000054799847, z: -0.00000010964145}
+      rotation: {x: -0.00000014156097, y: -0.00000012580126, z: -0.022621462, w: 0.9997441}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_ring_02_jnt
       parentName: beryl_rig_no_props:r_ring_01_jnt
@@ -4064,17 +4063,17 @@ ModelImporter:
     - name: beryl_rig_no_props:r_pinky_meta_jnt
       parentName: beryl_rig_no_props:r_hand_jnt
       position: {x: 0.029509654, y: -0.0019529776, z: 0.045151513}
-      rotation: {x: -0.108414024, y: 0.0745652, z: -0.19838719, w: 0.9712513}
+      rotation: {x: -0.10841397, y: 0.07456447, z: -0.19838937, w: 0.9712509}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_pinky_00_jnt
       parentName: beryl_rig_no_props:r_pinky_meta_jnt
-      position: {x: 0.059541304, y: 0.0000005762176, z: -0.00000013793166}
-      rotation: {x: -0.054829035, y: 0.01364595, z: 0.0131216375, w: 0.9983163}
+      position: {x: 0.059541345, y: 0.0000006709592, z: -0.00000015393162}
+      rotation: {x: -0.0000022798765, y: 0.00000010430808, z: 0.03890908, w: 0.9992427}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_pinky_01_jnt
       parentName: beryl_rig_no_props:r_pinky_00_jnt
-      position: {x: 0.054312058, y: 0.00000030771912, z: -0.000000013194543}
-      rotation: {x: -0.054055, y: -0.0032067553, z: -0.084496774, w: 0.9949513}
+      position: {x: 0.054312058, y: 0.00000023154223, z: -0.0000000022211675}
+      rotation: {x: 0.00000006835147, y: 0.000001537228, z: -0.07999723, w: 0.9967951}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_pinky_02_jnt
       parentName: beryl_rig_no_props:r_pinky_01_jnt
@@ -4089,18 +4088,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_meta_jnt
       parentName: beryl_rig_no_props:r_hand_jnt
-      position: {x: 0.025781495, y: 0.01573751, z: -0.040947583}
-      rotation: {x: 0.4397028, y: -0.06744127, z: -0.59356743, w: 0.6706644}
+      position: {x: 0.025781479, y: 0.015737575, z: -0.040947624}
+      rotation: {x: 0.42793867, y: -0.035368513, z: -0.5882495, w: 0.68525916}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_base_jnt
       parentName: beryl_rig_no_props:r_thumb_meta_jnt
       position: {x: 0.0435751, y: 0.00000013389014, z: -0.000000049329888}
-      rotation: {x: -0.05328307, y: 0.0026884729, z: 0.018266493, w: 0.9984088}
+      rotation: {x: 0, y: 0, z: 2.220446e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_00_jnt
       parentName: beryl_rig_no_props:r_thumb_base_jnt
-      position: {x: 0.05139619, y: 0.00000043446207, z: 0.00000038688884}
-      rotation: {x: -0.08213324, y: -0.014347768, z: 0.019354371, w: 0.99633014}
+      position: {x: 0.051396202, y: 0.00000039426263, z: 0.00000042319405}
+      rotation: {x: -0.029278675, y: -0.016511148, z: -0.0000000032660925, w: 0.99943495}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_thumb_01_jnt
       parentName: beryl_rig_no_props:r_thumb_00_jnt
@@ -4129,8 +4128,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapA01_jnt1
       parentName: beryl_rig_no_props:m_spine_01_jnt
-      position: {x: 0.10082415, y: 0.09960774, z: 0.15547268}
-      rotation: {x: 0.41873547, y: -0.094127, z: 0.8858451, w: -0.17629266}
+      position: {x: 0.10183393, y: 0.102913685, z: 0.15489073}
+      rotation: {x: 0.43196887, y: -0.08574441, z: 0.8840437, w: -0.15658087}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapA02_jnt
       parentName: beryl_rig_no_props:r_chestStrapA01_jnt1
@@ -4144,12 +4143,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA01_jnt
       parentName: beryl_rig_no_props:m_spine_01_jnt
-      position: {x: -0.10483275, y: 0.105642624, z: 0.16130196}
-      rotation: {x: 0.15143028, y: 0.8826387, z: 0.07093749, w: 0.43930146}
+      position: {x: -0.10332627, y: 0.10475582, z: 0.1558395}
+      rotation: {x: 0.17046991, y: 0.88498735, z: 0.07803895, w: 0.42620105}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA02_jnt
       parentName: beryl_rig_no_props:l_chestStrapA01_jnt
-      position: {x: -0.030566096, y: -2.842171e-16, z: -2.1316282e-16}
+      position: {x: -0.030566096, y: -1.4210854e-16, z: -1.4210854e-16}
       rotation: {x: -0.03789773, y: -0.09905088, z: 0.0034565942, w: 0.9943544}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA03_end
@@ -4159,12 +4158,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapB01_jnt
       parentName: beryl_rig_no_props:m_spine_01_jnt
-      position: {x: -0.10188202, y: 0.05972566, z: 0.16243826}
-      rotation: {x: 0.21970518, y: 0.8720216, z: 0.10696987, w: 0.42410544}
+      position: {x: -0.10188981, y: 0.05991272, z: 0.16179228}
+      rotation: {x: 0.22137667, y: 0.8720278, z: 0.10684624, w: 0.42325377}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA02_jnt
       parentName: beryl_rig_no_props:l_chestStrapB01_jnt
-      position: {x: -0.030566096, y: -2.842171e-16, z: -7.105427e-17}
+      position: {x: -0.030566096, y: -2.842171e-16, z: 2.842171e-16}
       rotation: {x: -0.038044978, y: -0.03129629, z: 0.0008750059, w: 0.99878544}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_chestStrapA03_end
@@ -4174,8 +4173,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapB01_jnt1
       parentName: beryl_rig_no_props:m_spine_01_jnt
-      position: {x: 0.10175516, y: 0.059373826, z: 0.16163091}
-      rotation: {x: 0.42273566, y: -0.108472414, z: 0.8718969, w: -0.22209027}
+      position: {x: 0.10170174, y: 0.05975549, z: 0.16176793}
+      rotation: {x: 0.42367923, y: -0.10749842, z: 0.8720242, w: -0.22025855}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_chestStrapA02_jnt
       parentName: beryl_rig_no_props:r_chestStrapB01_jnt1
@@ -4194,17 +4193,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:fSkirtA_02_jnt
       parentName: beryl_rig_no_props:fSkirtA_01_jnt
-      position: {x: -0.057281896, y: -1.4210854e-16, z: 7.105427e-17}
+      position: {x: -0.057281896, y: -1.4210854e-16, z: 1.4210854e-16}
       rotation: {x: -0.002188898, y: -0.008560212, z: 0.0012270161, w: 0.99996024}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:fSkirtA_03_jnt
       parentName: beryl_rig_no_props:fSkirtA_02_jnt
-      position: {x: -0.051835094, y: 0, z: -1.0658141e-16}
+      position: {x: -0.051835094, y: -1.4210854e-16, z: -3.5527135e-16}
       rotation: {x: 0.0056396974, y: 0.022783255, z: -0.008907098, w: 0.9996849}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:fSkirtA_04_jnt
       parentName: beryl_rig_no_props:fSkirtA_03_jnt
-      position: {x: -0.04594686, y: 2.1316282e-16, z: 0}
+      position: {x: -0.04594686, y: 0, z: 1.4210854e-16}
       rotation: {x: -0.0013750406, y: -0.0057209358, z: 0.002128605, w: 0.99998045}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:fSkirtA_05_jnt
@@ -4245,27 +4244,27 @@ ModelImporter:
     - name: beryl_rig_no_props:r_upper_leg_jnt
       parentName: beryl_rig_no_props:m_pelvis_jnt
       position: {x: 0.118338004, y: -0.0014495446, z: 0.0105497}
-      rotation: {x: 0.7902157, y: -0.60404646, z: -0.016565451, w: -0.102042705}
+      rotation: {x: 0.70468867, y: -0.6620835, z: 0.09464281, w: 0.23685876}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_knee_jnt
       parentName: beryl_rig_no_props:r_upper_leg_jnt
-      position: {x: 0.375862, y: -0.0000005247779, z: -0.00000008531843}
-      rotation: {x: 0.000000020158707, y: -0.022930518, z: 0.000000054775825, w: 0.9997371}
+      position: {x: 0.37586105, y: -0.00000052477884, z: -0.00000016270499}
+      rotation: {x: 0.000000046937828, y: -0.056656368, z: 0.00000013457164, w: 0.9983938}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_foot_jnt
       parentName: beryl_rig_no_props:r_knee_jnt
-      position: {x: 0.28288633, y: -0.000000124857, z: 0.00000024662558}
-      rotation: {x: -0.20058922, y: -0.063013814, z: 0.16527896, w: 0.96357465}
+      position: {x: 0.28288633, y: -0.00000012502645, z: 0.00000024657723}
+      rotation: {x: 0.03076181, y: -0.012673533, z: 0.041309495, w: 0.9985923}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_toe_jnt
       parentName: beryl_rig_no_props:r_foot_jnt
-      position: {x: -0.000000042189175, y: -0.0000000034994545, z: -0.17129312}
-      rotation: {x: 0.000000026287127, y: 0.15062696, z: -0.00000000400483, w: 0.98859066}
+      position: {x: -0.00000004218921, y: -0.0000000034995884, z: -0.17129312}
+      rotation: {x: -2.1193443e-13, y: 0.15062696, z: -8.783782e-13, w: 0.98859066}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_toetip_end
       parentName: beryl_rig_no_props:r_toe_jnt
-      position: {x: 0.009946593, y: -0.00000000202441, z: -0.10609938}
-      rotation: {x: -2.45001e-17, y: 1.4957958e-17, z: 4.123805e-13, w: 1}
+      position: {x: 0.009946593, y: -0.000000002024452, z: -0.10609938}
+      rotation: {x: -7.723141e-14, y: 9.92142e-17, z: -9.0028804e-13, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:r_knee_twist_00
       parentName: beryl_rig_no_props:r_knee_jnt
@@ -4290,26 +4289,26 @@ ModelImporter:
     - name: beryl_rig_no_props:l_upper_leg_jnt
       parentName: beryl_rig_no_props:m_pelvis_jnt
       position: {x: -0.118338004, y: -0.0014495446, z: 0.0105497}
-      rotation: {x: -0.14999498, y: -0.045631323, z: 0.6756971, w: 0.7203144}
+      rotation: {x: -0.0056708455, y: 0.018614503, z: 0.6703686, w: 0.74177307}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_knee_jnt
       parentName: beryl_rig_no_props:l_upper_leg_jnt
       position: {x: -0.3758627, y: 0.00000052477725, z: 0.00000007016795}
-      rotation: {x: 0.00036817038, y: -0.30661565, z: -0.0010489746, w: 0.9518328}
+      rotation: {x: 0.0000003469151, y: -0.00012587823, z: 0.00000043787642, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_foot_jnt
       parentName: beryl_rig_no_props:l_knee_jnt
       position: {x: -0.28288633, y: 0.00000012495252, z: -0.0000002466877}
-      rotation: {x: 0.11620607, y: 0.08039532, z: -0.007236571, w: 0.9899396}
+      rotation: {x: 0.035838652, y: -0.27704766, z: 0.013938053, w: 0.96008646}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_toe_jnt
       parentName: beryl_rig_no_props:l_foot_jnt
-      position: {x: 0.00000004218921, y: 0.000000003499588, z: 0.17129312}
-      rotation: {x: 0, y: 0.15062691, z: -0, w: 0.9885907}
+      position: {x: 0.00000004218921, y: 0.0000000034995884, z: 0.17129312}
+      rotation: {x: 0.01768724, y: 0.2725617, z: 0.0026043751, w: 0.9619722}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_toetip_end
       parentName: beryl_rig_no_props:l_toe_jnt
-      position: {x: -0.009946593, y: 0.0000000020244182, z: 0.10609938}
+      position: {x: -0.009946593, y: 0.000000002024418, z: 0.10609938}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: beryl_rig_no_props:l_knee_twist_00
